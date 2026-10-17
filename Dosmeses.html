@@ -1,0 +1,2735 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070710"><meta name="description" content="Una pequeña sorpresa de aniversario bajo la luna dorada.">
+<title>Felices 2 meses mi amor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Pirata+One&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{background:#080914}body{margin:0;color:#ffe3a0;background:#080914}
+.poster{position:relative;max-width:650px;min-height:100svh;margin:auto;overflow:hidden;background:radial-gradient(ellipse at 50% 32%,#2a1d31 0%,#171325 39%,#0a0b15 68%,#050609 100%);isolation:isolate}
+.header{position:absolute;left:0;right:0;top:0;z-index:5;text-align:center;padding:10px 10px 0;background:transparent;pointer-events:none;}
+    .header::before,.header::after{content:none;}
+h1{
+      position:relative;
+      width:min(95vw,520px);
+      margin:0 auto;
+      font-family:"Eater","Pirata One",Georgia,serif;
+      font-weight:400;
+      color:#f5d88c;
+      line-height:.84;
+      letter-spacing:.01em;
+      text-align:center;
+      text-shadow:
+        1px 2px 0 #8b5d28,
+        0 0 7px rgba(255,221,145,.12),
+        0 0 18px rgba(255,193,94,.08);
+      filter:drop-shadow(0 5px 10px rgba(0,0,0,.28));
+      transform:translateY(0);
+    }
+    h1::before,h1::after{content:none;}
+h1 span{display:block}h1 .top{font-size:clamp(36px,9.8vw,58px);margin-left:0}h1 .middle{font-size:clamp(50px,12.3vw,82px);margin-top:-4px}h1 .bottom{font-size:clamp(39px,10.2vw,66px);margin-top:-8px;margin-left:0}
+.illustration{width:100%;display:block;margin:0;overflow:visible;position:relative;z-index:2}
+.stars{animation:twinkle 4s ease-in-out infinite alternate}.star2{animation-delay:1.4s}
+.pumpkin{filter:drop-shadow(0 0 7px #ff791a77)}
+@keyframes twinkle{from{opacity:.25}to{opacity:.9}}@keyframes titleStars{from{opacity:.56}to{opacity:.94}}
+@media(min-width:650px){.header{top:-1px;padding-top:8px}h1{width:520px;transform:translateY(0)}.title-stars{width:520px}}
+@media(prefers-reduced-motion:reduce){
+  svg .twinkle{animation:none!important}
+}
+svg [filter="url(#glow)"]{will-change:opacity}
+svg [filter="url(#pumpGlow)"]{will-change:opacity}
+.poster::after{content:"";pointer-events:none;position:absolute;inset:0;box-shadow:inset 0 0 70px #020207aa,inset 0 -80px 90px #03030988}
+@media(max-width:390px){.header{top:0;padding:8px 10px 0}h1{width:95vw;letter-spacing:.008em;transform:translateY(0)}h1 .top{font-size:clamp(31px,9vw,40px)}h1 .middle{font-size:clamp(43px,11vw,55px);margin-top:-3px}h1 .bottom{font-size:clamp(36px,9.4vw,48px);margin-top:-7px}.title-stars{width:95vw;height:74px;top:3px}}
+
+.title-stars{
+  position:absolute;
+  left:50%;
+  top:4px;
+  transform:translateX(-50%);
+  width:min(95vw,520px);
+  height:86px;
+  border-radius:22px 22px 34px 34px;
+  pointer-events:none;
+  z-index:-1;
+  background:
+    linear-gradient(180deg, rgba(14,14,28,.34) 0%, rgba(13,13,26,.18) 54%, rgba(8,9,20,0) 100%);
+  filter:drop-shadow(0 0 4px rgba(255,224,170,.06));
+  opacity:.92;
+}
+
+
+@keyframes twinkleGlow{
+  0%,100%{
+    opacity:.45;
+    transform:scale(1);
+    filter:drop-shadow(0 0 0 rgba(255,233,170,0));
+  }
+  50%{
+    opacity:1;
+    transform:scale(1.22);
+    filter:drop-shadow(0 0 5px rgba(255,233,170,.72));
+  }
+}
+@keyframes twinkleGlowSoft{
+  0%,100%{
+    opacity:.38;
+    transform:scale(1);
+    filter:drop-shadow(0 0 0 rgba(255,240,190,0));
+  }
+  50%{
+    opacity:.9;
+    transform:scale(1.12);
+    filter:drop-shadow(0 0 3px rgba(255,240,190,.52));
+  }
+}
+svg .twinkle{
+  transform-box:fill-box;
+  transform-origin:center;
+}
+svg .twinkle.a{animation:twinkleGlow 2.6s ease-in-out infinite}
+svg .twinkle.b{animation:twinkleGlowSoft 3.2s ease-in-out .5s infinite}
+svg .twinkle.c{animation:twinkleGlow 3.8s ease-in-out 1s infinite}
+svg .twinkle.d{animation:twinkleGlowSoft 2.9s ease-in-out 1.2s infinite}
+
+
+/* speech bubble from Jack */
+.jack-bubble{
+  position:absolute;
+  z-index:20;
+  right:18px;
+  top:210px;
+  width:min(38vw,180px);
+  padding:14px 14px 13px;
+  border-radius:22px;
+  background:linear-gradient(180deg, rgba(255,248,232,.97) 0%, rgba(241,230,207,.97) 100%);
+  border:2px solid rgba(91,66,34,.55);
+  color:#382514;
+  box-shadow:
+    0 14px 26px rgba(0,0,0,.22),
+    0 2px 0 rgba(255,255,255,.42) inset,
+    0 -8px 18px rgba(157,109,39,.08) inset;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(14px) scale(.96);
+  transform-origin:0% 70%;
+  pointer-events:none;
+  transition:
+    opacity .55s ease,
+    transform .55s ease,
+    visibility 0s linear .55s;
+}
+.jack-bubble.is-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0) scale(1);
+  transition:
+    opacity .55s ease,
+    transform .55s ease,
+    visibility 0s linear 0s;
+}
+.jack-bubble.is-hiding{
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(8px) scale(.98);
+  transition:
+    opacity .45s ease,
+    transform .45s ease,
+    visibility 0s linear .45s;
+}
+.jack-bubble::before{
+  content:"";
+  position:absolute;
+  left:-10px;
+  bottom:26px;
+  width:22px;
+  height:22px;
+  background:linear-gradient(180deg, rgba(245,236,216,.98) 0%, rgba(230,216,189,.98) 100%);
+  border-left:2px solid rgba(91,66,34,.55);
+  border-bottom:2px solid rgba(91,66,34,.55);
+  transform:rotate(45deg);
+  border-bottom-left-radius:6px;
+  box-shadow:-8px 8px 12px rgba(0,0,0,.08);
+}
+.jack-bubble .bubble-title{
+  display:block;
+  margin:0 0 8px;
+  font-family:"Pirata One", Georgia, serif;
+  font-size:clamp(20px,4.2vw,24px);
+  line-height:1;
+  color:#5f3f1f;
+  text-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+.jack-bubble p{
+  margin:0;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:clamp(12px,2.3vw,13px);
+  line-height:1.22;
+  color:#3d2717;
+}
+.jack-bubble .bubble-title,
+.jack-bubble .line{
+  display:block;
+  opacity:0;
+  transform:translateY(7px);
+}
+.jack-bubble .line{
+  margin-top:2px;
+}
+.jack-bubble.is-visible .bubble-title{animation:bubbleLineIn .42s ease .18s forwards}
+.jack-bubble.is-visible .l1{animation:bubbleLineIn .42s ease .50s forwards}
+.jack-bubble.is-visible .l2{animation:bubbleLineIn .42s ease .82s forwards}
+.jack-bubble.is-visible .l3{animation:bubbleLineIn .42s ease 1.14s forwards}
+.jack-bubble.is-visible .l4{animation:bubbleLineIn .42s ease 1.46s forwards}
+.jack-bubble.is-visible .l5{
+  animation:bubbleLineIn .42s ease 1.78s forwards;
+  margin-top:7px;
+  color:#6a4013;
+  font-weight:700;
+  text-shadow:0 0 8px rgba(255,184,73,.18);
+}
+@keyframes bubbleLineIn{
+  0%{opacity:0;transform:translateY(7px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+@media (max-width: 430px){
+  .jack-bubble{
+    top:208px;
+    right:10px;
+    width:min(42vw,165px);
+    padding:11px 11px 10px;
+  }
+  .jack-bubble::before{
+    left:-9px;
+    bottom:23px;
+    width:18px;
+    height:18px;
+  }
+  .jack-bubble .bubble-title{
+    font-size:clamp(16px,4.5vw,20px);
+  }
+  .jack-bubble p{
+    font-size:clamp(10.5px,2.9vw,12px);
+  }
+}
+@media (min-width: 650px){
+  .jack-bubble{
+    top:218px;
+    right:24px;
+    width:188px;
+  }
+}
+
+
+svg [id^="starBlink"],
+svg [id^="pumpGlow"]{
+  transition: opacity .28s ease, filter .28s ease, transform .28s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+svg [id^="starBlink"]{
+  transition: opacity .42s ease, filter .42s ease, transform .42s ease;
+}
+
+
+/* four special clickable pumpkins */
+svg .pumpkin-choice{
+  cursor:pointer;
+  pointer-events:all;
+  transition:filter .24s ease, opacity .24s ease;
+}
+svg .pumpkin-choice:hover{
+  filter:
+    drop-shadow(0 0 8px rgba(255,224,122,.98))
+    drop-shadow(0 0 18px rgba(255,146,36,.95))
+    drop-shadow(0 0 32px rgba(255,102,18,.68));
+}
+svg .choice-halo{
+  opacity:.10;
+  transition:opacity .32s ease, filter .32s ease;
+  pointer-events:none;
+}
+svg .choice-halo.active{
+  opacity:.82;
+  filter:
+    drop-shadow(0 0 10px rgba(255,221,112,.98))
+    drop-shadow(0 0 25px rgba(255,139,32,.90))
+    drop-shadow(0 0 42px rgba(255,98,18,.62));
+}
+svg .choice-ring{
+  opacity:.10;
+  transition:opacity .32s ease, stroke-width .32s ease;
+  pointer-events:none;
+}
+svg .choice-ring.active{
+  opacity:.76;
+  stroke-width:3.2;
+}
+svg .pumpkin-choice.active-choice{
+  filter:
+    drop-shadow(0 0 7px rgba(255,240,161,1))
+    drop-shadow(0 0 18px rgba(255,155,40,.98))
+    drop-shadow(0 0 34px rgba(255,105,20,.82));
+}
+
+
+html{scroll-behavior:smooth}
+
+.letter-section{
+  position:relative;
+  max-width:650px;
+  min-height:100svh;
+  margin:0 auto;
+  padding:78px 22px 90px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 18%,rgba(91,62,106,.25),transparent 35%),
+    radial-gradient(circle at 50% 55%,rgba(79,48,78,.18),transparent 48%),
+    linear-gradient(180deg,#080914 0%,#110d1a 46%,#07080e 100%);
+  color:#f4ddb0;
+  isolation:isolate;
+}
+.letter-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.58;
+  background:
+    radial-gradient(circle at 8% 11%,#fff0c8 0 1px,transparent 1.8px),
+    radial-gradient(circle at 20% 25%,#e8d7bb 0 .8px,transparent 1.5px),
+    radial-gradient(circle at 77% 16%,#ffeab6 0 .9px,transparent 1.6px),
+    radial-gradient(circle at 90% 31%,#fff1ce 0 1px,transparent 1.8px),
+    radial-gradient(circle at 14% 69%,#efd9b4 0 .8px,transparent 1.5px),
+    radial-gradient(circle at 84% 74%,#ffe8ae 0 .9px,transparent 1.6px);
+}
+.letter-card{
+  position:relative;
+  z-index:2;
+  width:min(92vw,535px);
+  padding:34px 25px 36px;
+  border:1px solid rgba(226,190,125,.26);
+  border-radius:28px;
+  text-align:center;
+  background:
+    linear-gradient(180deg,rgba(31,24,39,.88),rgba(14,13,22,.94));
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.42),
+    inset 0 0 35px rgba(235,185,101,.04);
+}
+.letter-card::before,
+.letter-card::after{
+  content:"✦";
+  position:absolute;
+  top:18px;
+  color:#e8c679;
+  opacity:.58;
+  font-size:17px;
+}
+.letter-card::before{left:21px}
+.letter-card::after{right:21px}
+.letter-kicker{
+  margin:0 0 9px;
+  font-family:"Pirata One",Georgia,serif;
+  font-size:clamp(18px,4vw,23px);
+  color:#c89f60;
+  letter-spacing:.04em;
+}
+.letter-title{
+  margin:0;
+  font-family:"Eater","Pirata One",Georgia,serif;
+  font-size:clamp(34px,8vw,55px);
+  line-height:.95;
+  font-weight:400;
+  color:#f1d28c;
+  text-shadow:1px 2px 0 #785022,0 0 15px rgba(255,196,92,.12);
+}
+.letter-placeholder{
+  margin:24px auto 0;
+  max-width:390px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(15px,3.8vw,18px);
+  line-height:1.55;
+  color:#ddcdb9;
+}
+.letter-placeholder strong{
+  color:#f1cf86;
+}
+.letter-moon{
+  width:62px;
+  height:62px;
+  margin:26px auto 0;
+  border-radius:50%;
+  background:radial-gradient(circle at 42% 38%,#fff0cf 0%,#f2c77b 68%,#bb7730 100%);
+  box-shadow:0 0 18px rgba(255,205,117,.25),0 0 42px rgba(255,167,66,.10);
+}
+.letter-section.arrived .letter-card{
+  animation:letterReveal .85s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes letterReveal{
+  from{opacity:.35;transform:translateY(22px) scale(.98)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+
+/* old lower letter section hidden because messages now open in a mini menu */
+.letter-section{display:none!important}
+
+/* pumpkin message modal */
+body.modal-open{overflow:hidden}
+.message-overlay{
+  position:fixed;
+  inset:0;
+  z-index:70;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:rgba(4,5,12,.72);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .35s ease, visibility 0s linear .35s;
+}
+.message-overlay.show{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transition:opacity .35s ease, visibility 0s linear 0s;
+}
+.message-panel{
+  position:relative;
+  width:min(92vw,540px);
+  max-height:min(84svh,720px);
+  overflow:hidden;
+  border-radius:28px;
+  border:1px solid rgba(227,178,86,.42);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(76,54,112,.42), rgba(0,0,0,0) 32%),
+    linear-gradient(180deg, rgba(31,23,48,.98) 0%, rgba(18,15,28,.98) 100%);
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.48),
+    inset 0 0 0 1px rgba(255,219,147,.05),
+    inset 0 0 40px rgba(146,90,29,.07);
+  transform:translateY(18px) scale(.97);
+  transition:transform .42s cubic-bezier(.2,.85,.2,1);
+}
+.message-overlay.show .message-panel{transform:translateY(0) scale(1)}
+.message-panel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 6% 10%, rgba(255,233,171,.8) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 18% 23%, rgba(255,235,190,.5) 0 .8px, transparent 1.6px),
+    radial-gradient(circle at 89% 17%, rgba(255,240,186,.75) 0 .95px, transparent 1.7px),
+    radial-gradient(circle at 95% 74%, rgba(255,226,150,.6) 0 .8px, transparent 1.5px),
+    linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));
+  opacity:.4;
+}
+.message-panel::after{
+  content:"";
+  position:absolute;
+  left:22px;
+  right:22px;
+  top:76px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, rgba(232,188,98,.45), transparent);
+}
+.message-header{
+  position:relative;
+  z-index:2;
+  padding:26px 58px 14px;
+  text-align:center;
+}
+.message-kicker{
+  margin:0 0 5px;
+  font-family:"Pirata One", Georgia, serif;
+  font-size:clamp(17px,4vw,22px);
+  color:#efc96f;
+  letter-spacing:.03em;
+}
+.message-title{
+  margin:0;
+  font-family:"Eater","Pirata One", Georgia, serif;
+  font-size:clamp(26px,7vw,42px);
+  line-height:.95;
+  font-weight:400;
+  color:#f6d88b;
+  text-shadow:1px 2px 0 #7b5122, 0 0 18px rgba(255,201,102,.14);
+}
+.message-subtitle{
+  margin:10px 0 0;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:clamp(13px,3.2vw,15px);
+  color:#f0d8a4;
+  opacity:.92;
+}
+.message-decoration{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap:4px;
+  margin:0 auto 10px;
+  color:#f2cc68;
+  font-size:clamp(18px,4vw,24px);
+  filter:drop-shadow(0 0 10px rgba(255,180,67,.28));
+}
+.message-decoration .moon{
+  font-size:clamp(20px,4.6vw,28px);
+  transform:translateY(-2px);
+}
+.message-body{
+  position:relative;
+  z-index:2;
+  padding:16px 22px 20px;
+}
+.message-scroll{
+  max-height:min(46svh,420px);
+  overflow:auto;
+  padding:8px 12px 8px 8px;
+  scrollbar-width:thin;
+  scrollbar-color: rgba(232,188,98,.75) rgba(255,255,255,.06);
+}
+.message-scroll::-webkit-scrollbar{width:8px}
+.message-scroll::-webkit-scrollbar-track{
+  background:rgba(255,255,255,.05);
+  border-radius:10px;
+}
+.message-scroll::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg, rgba(246,212,129,.94), rgba(199,125,41,.94));
+  border-radius:10px;
+}
+.message-text{
+  margin:0;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:clamp(16px,4vw,19px);
+  line-height:1.74;
+  color:#f0ece6;
+}
+.message-text p{
+  margin:0 0 16px;
+}
+.message-text p:last-child{margin-bottom:0}
+.message-footer{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  padding:6px 22px 24px;
+  flex-wrap:wrap;
+}
+.message-btn{
+  appearance:none;
+  border:none;
+  border-radius:999px;
+  padding:12px 18px;
+  font-family:"Pirata One", Georgia, serif;
+  font-size:16px;
+  letter-spacing:.02em;
+  cursor:pointer;
+  transition:transform .22s ease, box-shadow .22s ease, opacity .22s ease;
+}
+.message-btn:hover{transform:translateY(-1px)}
+.message-btn.primary{
+  color:#2c1c0f;
+  background:linear-gradient(180deg, #f4d589 0%, #d89b3f 100%);
+  box-shadow:0 10px 22px rgba(241,171,58,.18);
+}
+.message-btn.secondary{
+  color:#f3d89c;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(243,216,156,.26);
+}
+.message-close{
+  position:absolute;
+  z-index:3;
+  right:14px;
+  top:14px;
+  width:38px;
+  height:38px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  color:#2b1a0e;
+  font-size:24px;
+  line-height:1;
+  background:linear-gradient(180deg, #f2d281 0%, #d28d37 100%);
+  box-shadow:0 8px 18px rgba(228,155,55,.2);
+}
+.message-close:hover{transform:scale(1.04)}
+.message-hint{
+  margin:6px 0 0;
+  text-align:center;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:12px;
+  color:#d9c295;
+  opacity:.82;
+}
+@media (max-width: 460px){
+  .message-panel{
+    width:min(94vw,540px);
+    border-radius:24px;
+  }
+  .message-header{padding:22px 48px 12px}
+  .message-body{padding:12px 16px 18px}
+  .message-scroll{max-height:min(48svh,360px); padding-right:8px}
+  .message-footer{padding:4px 16px 20px}
+}
+
+
+/* reliable invisible click areas over the four special pumpkins */
+svg .pumpkin-hit{
+  fill:#ffffff;
+  fill-opacity:.001;
+  stroke:none;
+  pointer-events:all;
+  cursor:pointer;
+}
+svg .pumpkin-hit:hover{
+  fill-opacity:.018;
+}
+
+
+/* ===== enchanted pumpkin letters ===== */
+.message-panel{
+  transform-origin:50% 100%;
+}
+.message-panel.origin-1{transform-origin:14% 100%}
+.message-panel.origin-2{transform-origin:38% 100%}
+.message-panel.origin-3{transform-origin:64% 100%}
+.message-panel.origin-4{transform-origin:86% 100%}
+
+.message-panel.theme-prayer{
+  background:
+    radial-gradient(circle at 17% 10%,rgba(244,211,127,.12),transparent 26%),
+    radial-gradient(circle at 78% 4%,rgba(103,76,139,.35),transparent 34%),
+    linear-gradient(180deg,rgba(31,23,48,.985),rgba(17,14,27,.99));
+}
+.message-panel.theme-love{
+  background:
+    radial-gradient(circle at 50% -5%,rgba(124,69,91,.28),transparent 34%),
+    radial-gradient(circle at 12% 70%,rgba(91,59,110,.18),transparent 34%),
+    linear-gradient(180deg,rgba(34,22,40,.985),rgba(17,13,24,.99));
+}
+.message-panel.theme-safe{
+  background:
+    radial-gradient(circle at 16% 4%,rgba(127,101,77,.20),transparent 31%),
+    radial-gradient(circle at 83% 21%,rgba(86,72,111,.27),transparent 34%),
+    linear-gradient(180deg,rgba(29,25,40,.985),rgba(15,14,23,.99));
+}
+.message-panel.theme-future{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(183,98,36,.22),transparent 31%),
+    radial-gradient(circle at 82% 26%,rgba(92,59,116,.24),transparent 31%),
+    linear-gradient(180deg,rgba(32,23,38,.99),rgba(14,13,21,.99));
+}
+
+/* ornament layer changes with every message */
+.message-ornaments{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  overflow:hidden;
+  border-radius:inherit;
+}
+.message-ornaments span{
+  position:absolute;
+  opacity:.34;
+  color:#e7c171;
+  text-shadow:0 0 10px rgba(242,180,75,.17);
+  font-family:Georgia,serif;
+}
+.message-ornaments .o1{left:18px;top:92px;font-size:18px}
+.message-ornaments .o2{right:21px;top:106px;font-size:15px}
+.message-ornaments .o3{left:28px;bottom:88px;font-size:14px}
+.message-ornaments .o4{right:30px;bottom:82px;font-size:17px}
+.message-panel.theme-prayer .message-ornaments .o1::before{content:"☾"}
+.message-panel.theme-prayer .message-ornaments .o2::before{content:"✦"}
+.message-panel.theme-prayer .message-ornaments .o3::before{content:"· ✧ ·"}
+.message-panel.theme-prayer .message-ornaments .o4::before{content:"✦"}
+.message-panel.theme-love .message-ornaments .o1::before{content:"♡"}
+.message-panel.theme-love .message-ornaments .o2::before{content:"✧"}
+.message-panel.theme-love .message-ornaments .o3::before{content:"♡"}
+.message-panel.theme-love .message-ornaments .o4::before{content:"✧"}
+.message-panel.theme-safe .message-ornaments .o1::before{content:"❧"}
+.message-panel.theme-safe .message-ornaments .o2::before{content:"✦"}
+.message-panel.theme-safe .message-ornaments .o3::before{content:"❧"}
+.message-panel.theme-safe .message-ornaments .o4::before{content:"✧"}
+.message-panel.theme-future .message-ornaments .o1::before{content:"✦"}
+.message-panel.theme-future .message-ornaments .o2::before{content:"☾"}
+.message-panel.theme-future .message-ornaments .o3::before{content:"✧"}
+.message-panel.theme-future .message-ornaments .o4::before{content:"✦"}
+
+.message-decoration{
+  min-height:31px;
+}
+.message-decoration span{
+  display:inline-block;
+}
+.message-decoration .deco-main{
+  font-size:28px;
+  line-height:1;
+  color:#f1cb72;
+  text-shadow:0 0 9px rgba(255,186,67,.22);
+}
+.message-decoration .deco-side{
+  font-size:15px;
+  opacity:.72;
+  transform:translateY(-2px);
+}
+
+/* animated text reveal */
+.message-text p{
+  opacity:0;
+  transform:translateY(9px);
+}
+.message-text.reveal p:nth-child(1){animation:enchantedTextIn .55s ease .12s forwards}
+.message-text.reveal p:nth-child(2){animation:enchantedTextIn .55s ease .55s forwards}
+.message-text.reveal p:nth-child(3){animation:enchantedTextIn .55s ease .98s forwards}
+@keyframes enchantedTextIn{
+  from{opacity:0;transform:translateY(9px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* four miniature pumpkin markers */
+.message-progress{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:16px;
+  margin:4px auto 13px;
+}
+.message-pumpkin-dot{
+  position:relative;
+  width:31px;
+  height:25px;
+  padding:0;
+  border:0;
+  cursor:pointer;
+  background:
+    radial-gradient(ellipse at 50% 53%,#8a3f18 0 24%,transparent 25%),
+    radial-gradient(ellipse at 37% 53%,#a44b19 0 31%,transparent 32%),
+    radial-gradient(ellipse at 63% 53%,#a44b19 0 31%,transparent 32%),
+    radial-gradient(ellipse at 50% 53%,#cf681d 0 45%,transparent 46%);
+  filter:drop-shadow(0 0 3px rgba(244,117,29,.18));
+  opacity:.48;
+  transition:transform .25s ease,opacity .25s ease,filter .25s ease;
+}
+.message-pumpkin-dot::before{
+  content:"";
+  position:absolute;
+  left:13px;
+  top:-3px;
+  width:5px;
+  height:7px;
+  border-radius:3px 3px 1px 1px;
+  background:#66502a;
+  transform:rotate(9deg);
+}
+.message-pumpkin-dot:hover{
+  opacity:.84;
+  transform:translateY(-1px) scale(1.05);
+}
+.message-pumpkin-dot.active{
+  opacity:1;
+  transform:scale(1.13);
+  filter:
+    drop-shadow(0 0 5px rgba(255,220,117,.92))
+    drop-shadow(0 0 12px rgba(255,128,30,.80));
+}
+.message-pumpkin-dot.visited:not(.active){
+  opacity:.72;
+  filter:drop-shadow(0 0 4px rgba(255,137,37,.35));
+}
+
+/* special final message */
+.message-finale{
+  display:none;
+  position:relative;
+  z-index:2;
+  margin:8px 20px 15px;
+  padding:14px 12px 13px;
+  border-top:1px solid rgba(234,195,115,.18);
+  border-bottom:1px solid rgba(234,195,115,.18);
+  text-align:center;
+  font-family:"Eater","Pirata One",Georgia,serif;
+  font-size:clamp(21px,5.6vw,30px);
+  line-height:1.08;
+  color:#f4d585;
+  text-shadow:1px 2px 0 #70471c,0 0 13px rgba(255,191,76,.25);
+}
+.message-panel.theme-future .message-finale{
+  display:block;
+  animation:finaleGlow 2.2s ease-in-out infinite alternate;
+}
+.message-panel.theme-future .message-finale::before,
+.message-panel.theme-future .message-finale::after{
+  content:"✦";
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  color:#efc971;
+  font-size:13px;
+  animation:finaleStar 1.8s ease-in-out infinite alternate;
+}
+.message-panel.theme-future .message-finale::before{left:4px}
+.message-panel.theme-future .message-finale::after{right:4px;animation-delay:.65s}
+@keyframes finaleGlow{
+  from{filter:drop-shadow(0 0 0 rgba(255,194,84,0))}
+  to{filter:drop-shadow(0 0 7px rgba(255,194,84,.25))}
+}
+@keyframes finaleStar{
+  from{opacity:.25;transform:translateY(-50%) scale(.8)}
+  to{opacity:.95;transform:translateY(-50%) scale(1.15)}
+}
+
+/* button refinements */
+#messageBack::before{content:"↶ ";font-size:17px}
+#messageNext::after{content:"  ✦";font-size:12px}
+.message-hint{
+  margin-top:10px;
+}
+
+
+/* stronger, more atmospheric modal overlay */
+.message-overlay{
+  background:rgba(4,5,12,.82);
+  backdrop-filter:blur(7px);
+  -webkit-backdrop-filter:blur(7px);
+}
+.message-overlay.show .message-panel{
+  transform:translateY(0) scale(1);
+  opacity:1;
+}
+.message-panel{
+  opacity:0;
+  transform:translateY(30px) scale(.84);
+  transition:
+    transform .48s cubic-bezier(.18,.82,.2,1),
+    opacity .34s ease;
+}
+
+/* integrated tiny ornaments instead of emoji look */
+.message-decoration{
+  gap:8px;
+  min-height:34px;
+}
+.message-decoration .deco-main,
+.message-decoration .deco-side{
+  position:relative;
+  display:inline-block;
+  vertical-align:middle;
+}
+.message-decoration .deco-main{
+  width:22px;
+  height:22px;
+  font-size:0;
+}
+.message-decoration .deco-main::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  background:#f1cb72;
+  box-shadow:0 0 10px rgba(255,190,84,.22);
+}
+.message-decoration .deco-main::after{
+  content:"";
+  position:absolute;
+  left:8px;
+  top:1px;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:rgba(31,23,48,.98);
+}
+.message-decoration .deco-side{
+  width:13px;
+  height:13px;
+  font-size:0;
+}
+.message-decoration .deco-side::before,
+.message-decoration .deco-side::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:2px;
+  height:12px;
+  border-radius:2px;
+  background:#f2cf79;
+  box-shadow:0 0 7px rgba(255,186,67,.25);
+  transform:translate(-50%,-50%);
+}
+.message-decoration .deco-side::after{
+  transform:translate(-50%,-50%) rotate(90deg);
+}
+.message-decoration .deco-side i{
+  position:absolute;
+  inset:0;
+}
+.message-decoration .deco-side i::before,
+.message-decoration .deco-side i::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:2px;
+  height:12px;
+  border-radius:2px;
+  background:#f2cf79;
+  box-shadow:0 0 7px rgba(255,186,67,.25);
+}
+.message-decoration .deco-side i::before{
+  transform:translate(-50%,-50%) rotate(45deg);
+}
+.message-decoration .deco-side i::after{
+  transform:translate(-50%,-50%) rotate(-45deg);
+}
+
+/* modal subtly "born" from the selected pumpkin */
+.message-panel.origin-1{transform-origin:14% 100%}
+.message-panel.origin-2{transform-origin:37% 100%}
+.message-panel.origin-3{transform-origin:63% 100%}
+.message-panel.origin-4{transform-origin:86% 100%}
+.message-panel.spawn-flash{
+  animation:panelSpawnFlash .62s ease;
+}
+@keyframes panelSpawnFlash{
+  0%{box-shadow:0 0 0 rgba(255,174,72,0), inset 0 0 0 1px rgba(255,219,147,.05), inset 0 0 40px rgba(146,90,29,.07)}
+  42%{box-shadow:0 0 34px rgba(255,174,72,.12), 0 25px 70px rgba(0,0,0,.48), inset 0 0 0 1px rgba(255,219,147,.05), inset 0 0 40px rgba(146,90,29,.07)}
+  100%{box-shadow:0 25px 70px rgba(0,0,0,.48), inset 0 0 0 1px rgba(255,219,147,.05), inset 0 0 40px rgba(146,90,29,.07)}
+}
+
+/* visited pumpkins remain gently marked */
+svg .pumpkin-choice.visited-choice{
+  filter:
+    drop-shadow(0 0 4px rgba(255,228,139,.40))
+    drop-shadow(0 0 10px rgba(255,126,35,.34));
+}
+svg .choice-halo.visited{
+  opacity:.26;
+  filter:
+    drop-shadow(0 0 6px rgba(255,206,100,.45))
+    drop-shadow(0 0 16px rgba(255,111,24,.28));
+}
+svg .choice-ring.visited{
+  opacity:.34;
+  stroke-width:2.1;
+}
+
+/* completion moment after all 4 are discovered */
+svg .pumpkin-choice.celebrate-choice{
+  animation:allPumpkinsCelebrate 1.15s ease-in-out 4;
+}
+svg .choice-halo.celebrate,
+svg .choice-ring.celebrate{
+  animation:allPumpkinsHalo 1.15s ease-in-out 4;
+}
+@keyframes allPumpkinsCelebrate{
+  0%,100%{
+    filter:
+      drop-shadow(0 0 6px rgba(255,223,136,.52))
+      drop-shadow(0 0 15px rgba(255,126,35,.38));
+  }
+  50%{
+    filter:
+      drop-shadow(0 0 12px rgba(255,241,188,.95))
+      drop-shadow(0 0 26px rgba(255,140,35,.88))
+      drop-shadow(0 0 42px rgba(255,100,20,.58));
+  }
+}
+@keyframes allPumpkinsHalo{
+  0%,100%{opacity:.32}
+  50%{opacity:.92}
+}
+
+.completion-banner{
+  position:fixed;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%) translateY(20px);
+  z-index:85;
+  width:min(92vw,470px);
+  padding:14px 18px;
+  border-radius:22px;
+  border:1px solid rgba(236,193,108,.34);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(88,61,120,.34), transparent 42%),
+    linear-gradient(180deg, rgba(30,23,44,.96), rgba(17,13,24,.97));
+  color:#f4ddb0;
+  text-align:center;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:clamp(15px,3.8vw,18px);
+  line-height:1.45;
+  box-shadow:0 20px 45px rgba(0,0,0,.40);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .35s ease, transform .35s ease, visibility 0s linear .35s;
+}
+.completion-banner strong{
+  display:block;
+  margin-bottom:2px;
+  font-family:"Pirata One", Georgia, serif;
+  font-size:clamp(21px,5vw,27px);
+  color:#f2cf79;
+  letter-spacing:.02em;
+}
+.completion-banner.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(-50%) translateY(0);
+  transition:opacity .35s ease, transform .35s ease, visibility 0s linear 0s;
+}
+
+
+/* completion banner + final fireworks celebration */
+.completion-banner{
+  position:fixed;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%) translateY(20px);
+  z-index:85;
+  width:min(92vw,470px);
+  padding:14px 18px;
+  border-radius:22px;
+  border:1px solid rgba(236,193,108,.34);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(88,61,120,.34), transparent 42%),
+    linear-gradient(180deg, rgba(30,23,44,.96), rgba(17,13,24,.97));
+  color:#f4ddb0;
+  text-align:center;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:clamp(15px,3.8vw,18px);
+  line-height:1.45;
+  box-shadow:0 20px 45px rgba(0,0,0,.40);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .35s ease, transform .35s ease, visibility 0s linear .35s;
+}
+.completion-banner strong{
+  display:block;
+  margin-bottom:2px;
+  font-family:"Pirata One", Georgia, serif;
+  font-size:clamp(21px,5vw,27px);
+  color:#f2cf79;
+  letter-spacing:.02em;
+}
+.completion-banner.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(-50%) translateY(0);
+  transition:opacity .35s ease, transform .35s ease, visibility 0s linear 0s;
+}
+
+.grand-celebration{
+  position:fixed;
+  inset:0;
+  z-index:120;
+  pointer-events:none;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .35s ease, visibility 0s linear .35s;
+}
+.grand-celebration.show{
+  opacity:1;
+  visibility:visible;
+  transition:opacity .35s ease, visibility 0s linear 0s;
+}
+.grand-celebration::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(17,12,34,.16), rgba(5,5,18,.64) 58%, rgba(1,2,8,.88));
+}
+.grand-celebration.show::before{
+  animation:celebrationBackdropDarken 10s ease forwards;
+}
+.celebration-text{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:3;
+  transform:translate(-50%,-50%) scale(.86);
+  width:min(92vw,720px);
+  text-align:center;
+  font-family:"Eater","Pirata One",Georgia,serif;
+  font-size:clamp(38px,9.4vw,78px);
+  line-height:.92;
+  letter-spacing:.02em;
+  color:#fff2ff;
+  text-shadow:
+    0 0 12px rgba(195,152,255,.98),
+    0 0 28px rgba(106,170,255,.85),
+    0 0 44px rgba(75,89,255,.34),
+    2px 3px 0 rgba(28,14,48,.82);
+  opacity:0;
+}
+.grand-celebration.show .celebration-text{
+  animation:celebrationTextIn 10s ease forwards;
+}
+.celebration-text::after{
+  content:"";
+  display:block;
+  width:min(74vw,320px);
+  height:4px;
+  margin:18px auto 0;
+  border-radius:999px;
+  background:linear-gradient(90deg, rgba(132,96,255,0), rgba(210,178,255,1), rgba(118,184,255,1), rgba(132,96,255,0));
+  box-shadow:0 0 16px rgba(155,129,255,.72);
+}
+@keyframes celebrationBackdropDarken{
+  0%{opacity:0}
+  18%{opacity:.58}
+  72%{opacity:.80}
+  100%{opacity:.90}
+}
+@keyframes celebrationTextIn{
+  0%{opacity:0; transform:translate(-50%,-42%) scale(.70)}
+  10%{opacity:1; transform:translate(-50%,-50%) scale(1.04)}
+  82%{opacity:1; transform:translate(-50%,-50%) scale(1)}
+  100%{opacity:0; transform:translate(-50%,-54%) scale(.98)}
+}
+.fireworks-layer{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  overflow:hidden;
+}
+.firework-burst{
+  position:absolute;
+  width:0;
+  height:0;
+}
+.firework-core{
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle, rgba(255,255,255,.98) 0 18%, var(--core-color, #a88cff) 34%, rgba(255,255,255,0) 74%);
+  filter:blur(.2px) drop-shadow(0 0 10px var(--core-color, rgba(168,140,255,.85)));
+  animation:fireworkCore .95s ease-out forwards;
+}
+.firework-particle{
+  position:absolute;
+  left:0;
+  top:0;
+  width:var(--size,4px);
+  height:var(--size,4px);
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,.96) 0 20%, var(--color, #9b7cff) 45%, rgba(255,255,255,0) 78%);
+  box-shadow:0 0 12px var(--color, rgba(155,124,255,.9));
+  opacity:0;
+  transform:translate(-50%,-50%);
+  animation:fireworkParticle 1.35s ease-out forwards;
+  animation-delay:var(--delay,0s);
+}
+.firework-ring{
+  position:absolute;
+  left:0;
+  top:0;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  border:1.6px solid var(--ring-color, rgba(164,136,255,.8));
+  transform:translate(-50%,-50%) scale(.25);
+  opacity:0;
+  box-shadow:0 0 16px var(--ring-color, rgba(164,136,255,.52));
+  animation:fireworkRing 1.2s ease-out forwards;
+}
+@keyframes fireworkParticle{
+  0%{opacity:0; transform:translate(-50%,-50%) translate(0,0) scale(.2)}
+  14%{opacity:1}
+  100%{opacity:0; transform:translate(-50%,-50%) translate(var(--dx),var(--dy)) scale(1)}
+}
+@keyframes fireworkCore{
+  0%{opacity:0; transform:translate(-50%,-50%) scale(.15)}
+  18%{opacity:1; transform:translate(-50%,-50%) scale(1)}
+  100%{opacity:0; transform:translate(-50%,-50%) scale(1.45)}
+}
+@keyframes fireworkRing{
+  0%{opacity:0; transform:translate(-50%,-50%) scale(.25)}
+  18%{opacity:.9}
+  100%{opacity:0; transform:translate(-50%,-50%) scale(5.4)}
+}
+
+
+/* ===== FIX: cartas largas completas y scroll seguro ===== */
+.message-panel{
+  display:flex;
+  flex-direction:column;
+  width:min(94vw,560px);
+  max-height:min(92svh,790px);
+  overflow:hidden;
+}
+
+.message-header,
+.message-progress,
+.message-finale,
+.message-footer{
+  flex:0 0 auto;
+}
+
+.message-body{
+  flex:1 1 auto;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  padding:12px 22px 12px;
+}
+
+.message-scroll{
+  flex:1 1 auto;
+  min-height:0;
+  max-height:none;
+  overflow-y:auto;
+  overflow-x:hidden;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+  padding:8px 13px 14px 8px;
+}
+
+/* La versión anterior ocultaba todos los párrafos excepto los primeros 3.
+   Ahora todos los textos siempre quedan visibles. */
+.message-text p,
+.message-text.reveal p,
+.message-text.reveal p:nth-child(n){
+  opacity:1;
+  transform:none;
+  animation:none;
+}
+
+/* Una entrada suave aplicada al bloque completo, sin ocultar contenido. */
+.message-text.reveal{
+  animation:fullLetterReveal .48s ease both;
+}
+
+@keyframes fullLetterReveal{
+  from{opacity:.15; transform:translateY(7px)}
+  to{opacity:1; transform:translateY(0)}
+}
+
+.message-text p{
+  margin:0 0 17px;
+}
+
+.message-text p:last-child{
+  margin-bottom:5px;
+}
+
+/* La carta de las 100 cosas queda más cómoda de leer. */
+.message-panel.theme-love .message-text p{
+  margin-bottom:11px;
+  line-height:1.58;
+}
+
+.message-hint{
+  flex:0 0 auto;
+  margin:7px 0 0;
+}
+
+@media (max-width:460px){
+  .message-panel{
+    width:95vw;
+    max-height:94svh;
+    border-radius:22px;
+  }
+
+  .message-header{
+    padding:18px 45px 9px;
+  }
+
+  .message-title{
+    font-size:clamp(24px,6.5vw,35px);
+  }
+
+  .message-subtitle{
+    margin-top:7px;
+  }
+
+  .message-decoration{
+    margin-bottom:6px;
+  }
+
+  .message-body{
+    min-height:0;
+    padding:8px 14px 9px;
+  }
+
+  .message-scroll{
+    max-height:none;
+    padding:6px 9px 12px 5px;
+  }
+
+  .message-text{
+    font-size:15.5px;
+    line-height:1.62;
+  }
+
+  .message-progress{
+    margin:3px auto 8px;
+  }
+
+  .message-finale{
+    margin:5px 15px 8px;
+    padding:9px 10px;
+  }
+
+  .message-footer{
+    padding:3px 12px 12px;
+    gap:8px;
+  }
+
+  .message-btn{
+    padding:10px 14px;
+    font-size:15px;
+  }
+}
+
+
+.creator-signature{
+  position:relative;
+  z-index:8;
+  width:100%;
+  padding:18px 16px 28px;
+  text-align:center;
+  font-family:"Pirata One", Georgia, serif;
+  font-size:clamp(16px,4vw,20px);
+  letter-spacing:.05em;
+  color:rgba(232,210,168,.78);
+  text-shadow:
+    0 0 8px rgba(164,121,255,.16),
+    0 0 12px rgba(109,159,255,.08);
+}
+.creator-signature::before{
+  content:"";
+  display:block;
+  width:82px;
+  height:1px;
+  margin:0 auto 10px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(214,183,123,.48),
+    transparent
+  );
+}
+.creator-signature span{
+  color:#f0d591;
+}
+
+</style>
+</head>
+<body>
+<main class="poster">
+
+<div class="jack-bubble" aria-label="Mensaje de Jack">
+  <span class="bubble-title">Hola amiguita</span>
+  <p>
+    <span class="line l1">Tu novio me mandó</span>
+    <span class="line l2">para decirte</span>
+    <span class="line l3">que te ama</span>
+    <span class="line l4">y que tiene un mensaje</span>
+    <span class="line l5">Presiona las calabazas y descubre qué te dice</span>
+  </p>
+</div>
+
+<div style="position:absolute;left:0;right:0;top:0;height:320px;z-index:1;pointer-events:none;
+            background:
+              radial-gradient(circle at 4% 15%, rgba(255,243,206,.95) 0 1.1px, transparent 1.9px),
+              radial-gradient(circle at 9% 34%, rgba(235,218,189,.9) 0 .8px, transparent 1.5px),
+              radial-gradient(circle at 14% 20%, rgba(255,239,194,.95) 0 1px, transparent 1.7px),
+              radial-gradient(circle at 20% 42%, rgba(243,228,201,.82) 0 .7px, transparent 1.4px),
+              radial-gradient(circle at 26% 16%, rgba(255,230,173,.88) 0 .95px, transparent 1.6px),
+              radial-gradient(circle at 31% 36%, rgba(255,242,206,.92) 0 1px, transparent 1.8px),
+              radial-gradient(circle at 38% 13%, rgba(224,208,186,.82) 0 .8px, transparent 1.5px),
+              radial-gradient(circle at 44% 31%, rgba(255,242,213,.93) 0 1.15px, transparent 2px),
+              radial-gradient(circle at 50% 19%, rgba(239,216,182,.86) 0 .8px, transparent 1.5px),
+              radial-gradient(circle at 57% 38%, rgba(248,229,199,.84) 0 .75px, transparent 1.4px),
+              radial-gradient(circle at 63% 14%, rgba(255,241,208,.92) 0 1px, transparent 1.8px),
+              radial-gradient(circle at 69% 32%, rgba(235,218,189,.84) 0 .75px, transparent 1.4px),
+              radial-gradient(circle at 75% 18%, rgba(255,238,196,.9) 0 .95px, transparent 1.6px),
+              radial-gradient(circle at 82% 37%, rgba(255,241,208,.9) 0 1px, transparent 1.8px),
+              radial-gradient(circle at 88% 16%, rgba(239,216,182,.84) 0 .8px, transparent 1.5px),
+              radial-gradient(circle at 94% 30%, rgba(255,243,206,.92) 0 1px, transparent 1.8px),
+              linear-gradient(180deg, rgba(8,9,20,.24) 0%, rgba(8,9,20,.18) 18%, rgba(8,9,20,.12) 38%, rgba(8,9,20,.06) 60%, rgba(8,9,20,.02) 82%, rgba(8,9,20,0) 100%),
+              radial-gradient(ellipse at 50% 7%, rgba(40,30,71,.34) 0%, rgba(28,21,49,.18) 40%, rgba(13,12,25,.06) 66%, rgba(8,9,20,0) 88%),
+              radial-gradient(ellipse at 18% 8%, rgba(58,43,88,.16) 0%, rgba(8,9,20,0) 60%),
+              radial-gradient(ellipse at 82% 8%, rgba(58,43,88,.16) 0%, rgba(8,9,20,0) 60%);"></div>
+<header class="header">
+  <div style="position:absolute;left:50%;top:-12px;transform:translateX(-50%);width:112%;height:228px;border-radius:50%;
+              background:radial-gradient(ellipse at center, rgba(46,34,74,.24) 0%, rgba(20,17,36,.14) 46%, rgba(10,10,20,.05) 64%, rgba(8,9,20,0) 84%);
+              filter:blur(12px);pointer-events:none;"></div>
+
+  <div class="title-stars"></div>
+
+  <h1><span class="top">Felices 2</span><span class="middle">meses</span><span class="bottom">mi amor</span></h1>
+</header>
+<svg class="illustration" viewBox="0 0 600 920" role="img" aria-label="Ilustración original de fantasía gótica: luna dorada, figura esquelética sobre una colina en espiral y calabazas brillantes">
+<defs>
+<radialGradient id="moon"><stop stop-color="#ffebd0"/><stop offset=".78" stop-color="#ffe3af"/><stop offset="1" stop-color="#ffc96f"/></radialGradient>
+<radialGradient id="sky"><stop stop-color="#292038"/><stop offset="1" stop-color="#080914"/></radialGradient>
+<linearGradient id="hill" x1="0%" x2="100%" y1="0%" y2="100%"><stop stop-color="#343344"/><stop offset=".45" stop-color="#19182b"/><stop offset="1" stop-color="#080913"/></linearGradient>
+<radialGradient id="pump"><stop stop-color="#ffbd4a"/><stop offset=".55" stop-color="#dc6a1b"/><stop offset="1" stop-color="#853410"/></radialGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+<radialGradient id="moonHalo"><stop stop-color="#ffe6a6" stop-opacity=".48"/><stop offset=".58" stop-color="#ffc96f" stop-opacity=".16"/><stop offset="1" stop-color="#ffc96f" stop-opacity="0"/></radialGradient>
+<linearGradient id="fog" x1="0%" x2="0%" y1="0%" y2="100%"><stop stop-color="#e9d7be" stop-opacity=".22"/><stop offset=".48" stop-color="#cab8b0" stop-opacity=".12"/><stop offset="1" stop-color="#6d6777" stop-opacity="0"/></linearGradient>
+<filter id="softGlow"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="mistBlur"><feGaussianBlur stdDeviation="10"/></filter>
+
+<pattern id="grain" width="15" height="21" patternUnits="userSpaceOnUse"><path d="M2 0Q9 11 3 21 M10 0Q15 9 11 21" stroke="#a5a0af" stroke-width=".65" opacity=".2" fill="none"/></pattern>
+<g id="jack-o"><path d="M-5-20l-3-12 7-5 2 13" stroke="#4a4324" stroke-width="4" fill="none"/><ellipse rx="32" ry="29" fill="url(#pump)" stroke="#7b3817" stroke-width="2"/><path d="M0-28Q-15 0 0 29M0-28Q15 0 0 29M-19-21Q-30 0-18 22M19-21Q30 0 18 22" stroke="#77360f" fill="none" stroke-width="2" opacity=".7"/><path d="M-23-7l14-9 1 17z M8-16l14 9-15 8z M-2 1l7 8-9 1z M-24 8l10 8 6-4 9 9 8-8 8 3 8-8-4 15-10 5-12-5-12 4-10-8z" fill="#ffe78e" stroke="#7c3c10" stroke-width="1.5"/></g>
+
+<linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#080812"/><stop offset=".35" stop-color="#151426"/><stop offset=".68" stop-color="#0b0b17"/><stop offset="1" stop-color="#05060c"/>
+</linearGradient>
+<radialGradient id="posterMoonHalo"><stop stop-color="#ffd98d" stop-opacity=".34"/><stop offset=".6" stop-color="#d89d56" stop-opacity=".10"/><stop offset="1" stop-color="#7c4d37" stop-opacity="0"/></radialGradient>
+<linearGradient id="mist" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b19bad" stop-opacity="0"/><stop offset=".25" stop-color="#b19bad" stop-opacity=".16"/><stop offset=".65" stop-color="#c9a991" stop-opacity=".1"/><stop offset="1" stop-color="#b19bad" stop-opacity="0"/></linearGradient>
+<filter id="blur18"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="posterSoftGlow"><feGaussianBlur stdDeviation="5"/></filter>
+<pattern id="moonDust" width="37" height="29" patternUnits="userSpaceOnUse">
+ <circle cx="5" cy="7" r="1.5" fill="#b98270" opacity=".12"/><circle cx="28" cy="18" r="2.5" fill="#9f766d" opacity=".09"/><path d="M0 25Q12 18 25 24T37 20" fill="none" stroke="#b1897a" stroke-width="1" opacity=".1"/>
+</pattern>
+
+<linearGradient id="posterHill" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0" stop-color="#373446"/><stop offset=".38" stop-color="#242236"/><stop offset=".72" stop-color="#151525"/><stop offset="1" stop-color="#090a13"/>
+</linearGradient>
+<linearGradient id="frontHill" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#403949"/><stop offset=".45" stop-color="#262238"/><stop offset="1" stop-color="#10101b"/>
+</linearGradient>
+<pattern id="barkDense" width="18" height="34" patternUnits="userSpaceOnUse">
+  <path d="M3-2Q11 8 5 18T7 36 M12-4Q19 8 13 19T15 38" fill="none" stroke="#8c8799" stroke-width="1" opacity=".26"/>
+  <path d="M0 9Q7 15 2 24 M9 2Q15 13 10 27" fill="none" stroke="#4a4659" stroke-width=".8" opacity=".33"/>
+</pattern>
+<filter id="pumpGlow"><feGaussianBlur stdDeviation="4.5"/></filter>
+<path id="mainHillShape" d="M600 920L600 548
+ C547 512 465 468 385 451
+ C320 438 267 450 231 481
+ C198 509 188 546 210 570
+ C232 594 271 596 301 578
+ C332 559 341 526 326 501
+ C313 478 285 470 261 483
+ C239 495 232 519 244 536
+ C255 552 277 555 294 545
+ C290 561 280 574 264 582
+ C236 596 205 586 192 561
+ C180 539 186 512 207 494
+ C242 468 293 465 348 477
+ C423 494 490 536 539 589
+ C582 635 597 699 584 764
+ C566 852 474 903 326 920Z"/>
+<clipPath id="mainHillClip"><use href="#mainHillShape"/></clipPath>
+<path id="frontHillShape" d="M0 920V730
+ C34 709 69 694 104 687
+ C137 680 167 681 196 687
+ C227 694 253 706 280 717
+ C307 728 334 733 362 731
+ C391 729 418 720 445 713
+ C474 706 503 705 531 710
+ C557 714 581 722 600 731
+ L600 920Z"/>
+<clipPath id="frontHillClip"><use href="#frontHillShape"/></clipPath>
+
+</defs>
+<g id="sceneShift" transform="translate(0 68)">
+<!-- layered night sky -->
+<rect width="600" height="920" fill="url(#night)"/>
+<ellipse cx="300" cy="333" rx="290" ry="266" fill="url(#posterMoonHalo)" filter="url(#blur18)"/>
+<!-- faint gothic clouds -->
+<g fill="none" stroke="#6a5e78" opacity=".14" stroke-width="13" filter="url(#blur8)">
+ <path d="M-55 248Q58 194 159 241T353 229T664 212"/>
+ <path d="M-42 396Q78 349 183 394T401 382T660 352"/>
+ <path d="M-72 488Q57 451 170 483T370 470T682 435"/>
+ <path d="M-66 548Q71 517 181 542T375 529T688 500" opacity=".72"/>
+</g>
+<!-- moon and halo -->
+<g id="livingMoon">
+  <circle cx="300" cy="325" r="286" fill="url(#moonHalo)" opacity=".12" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".08;.18;.08" dur="8.4s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="280;290;280" dur="8.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="325" r="272" fill="url(#moonHalo)" opacity=".42" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".36;.48;.36" dur="6.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="325" r="244" fill="#ffcc79" opacity=".18" filter="url(#glow)">
+    <animate attributeName="opacity" values=".14;.22;.14" dur="6.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="325" r="226" fill="url(#moon)"/>
+  <circle cx="300" cy="325" r="226" fill="url(#moonDust)" opacity=".58"/>
+  <circle cx="300" cy="325" r="232" fill="none" stroke="#ffe8b0" stroke-width="1.2" opacity=".06">
+    <animate attributeName="opacity" values=".03;.11;.03" dur="6.8s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g fill="none" stroke="#f5cf94" opacity=".10">
+ <path d="M112 322q92-64 188-35"/>
+ <path d="M315 192q87-22 151 18"/>
+ <path d="M240 436q74-37 142-16"/>
+</g>
+<g fill="#a97d74" opacity=".14">
+ <ellipse cx="210" cy="240" rx="34" ry="27"/><ellipse cx="403" cy="387" rx="25" ry="18"/><ellipse cx="350" cy="182" rx="21" ry="14"/>
+ <ellipse cx="283" cy="403" rx="17" ry="12"/><ellipse cx="161" cy="333" rx="14" ry="21"/><ellipse cx="435" cy="266" rx="12" ry="17"/>
+</g>
+<g fill="none" stroke="#c29580" opacity=".11"><path d="M142 303q54-35 104-21M359 210q54-13 95 15M335 430q48-20 88-5"/></g>
+<!-- extra violet mist around the moon -->
+<g fill="#6f5b8f" opacity=".12" filter="url(#mistBlur)">
+ <ellipse cx="208" cy="456" rx="132" ry="26"/>
+ <ellipse cx="402" cy="445" rx="122" ry="24"/>
+ <ellipse cx="303" cy="505" rx="198" ry="30" opacity=".72"/>
+</g>
+<g fill="#8a74a5" opacity=".06" filter="url(#softGlow)">
+ <ellipse cx="168" cy="286" rx="78" ry="18"/>
+ <ellipse cx="439" cy="292" rx="82" ry="20"/>
+</g>
+<!-- stars and tiny bats -->
+<g class="stars" fill="#fff0cb">
+  <circle id="starBlink1" cx="45" cy="80" r="1.2"><animate attributeName="opacity" values=".45;1;.45" dur="2.6s" repeatCount="indefinite"/><animate attributeName="r" values="1.2;1.55;1.2" dur="2.6s" repeatCount="indefinite"/></circle>
+  <circle cx="92" cy="166" r=".8"/>
+  <circle id="starBlink2" cx="510" cy="145" r="1.4"><animate attributeName="opacity" values=".4;1;.4" dur="3.8s" begin=".5s" repeatCount="indefinite"/><animate attributeName="r" values="1.4;1.8;1.4" dur="3.8s" begin=".5s" repeatCount="indefinite"/></circle>
+  <circle cx="554" cy="253" r=".8"/>
+  <circle cx="63" cy="376" r="1"><animate attributeName="opacity" values=".35;.9;.35" dur="2.9s" begin="1s" repeatCount="indefinite"/></circle>
+  <circle id="starBlink3" cx="538" cy="452" r="1.2"><animate attributeName="opacity" values=".38;.95;.38" dur="3.2s" begin=".8s" repeatCount="indefinite"/><animate attributeName="r" values="1.2;1.5;1.2" dur="3.2s" begin=".8s" repeatCount="indefinite"/></circle>
+  <circle cx="487" cy="86" r=".7"/>
+  <circle cx="118" cy="111" r=".7"/>
+  <circle cx="243" cy="132" r=".9"><animate attributeName="opacity" values=".4;1;.4" dur="3s" begin=".3s" repeatCount="indefinite"/></circle>
+  <circle cx="301" cy="155" r=".8"/>
+  <circle id="starBlink4" cx="356" cy="128" r=".9"><animate attributeName="opacity" values=".4;1;.4" dur="2.7s" begin="1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="409" cy="167" r=".75"/>
+</g>
+<g stroke="#f4ddb0" stroke-linecap="round" opacity=".16">
+ <path d="M243 129v5M240.5 131.5h5" stroke-width=".65"/>
+ <path d="M356 125v5M353.5 127.5h5" stroke-width=".65"/>
+</g>
+<g fill="#11111b" opacity=".72">
+ <path d="M92 292q8-8 15 0q8-8 16 0q-8-3-16 5q-7-8-15-5Z"/>
+ <path d="M481 301q6-6 12 0q6-6 12 0q-6-2-12 4q-6-6-12-4Z"/>
+ <path d="M156 248q5-5 10 0q5-5 10 0q-5-2-10 3q-5-5-10-3Z" opacity=".72"/>
+ <path d="M424 232q5-5 10 0q5-5 11 0q-5-2-11 3q-5-5-10-3Z" opacity=".62"/>
+</g>
+<!-- extra tiny bats for more atmosphere -->
+<g fill="#12111c" opacity=".62">
+ <path d="M205 205q4-4 8 0q4-4 8 0q-4-1-8 3q-4-4-8-3Z"/>
+ <path d="M260 168q5-5 10 0q5-5 10 0q-5-2-10 3q-5-5-10-3Z" opacity=".55"/>
+ <path d="M338 186q4-4 8 0q4-4 8 0q-4-1-8 3q-4-4-8-3Z" opacity=".58"/>
+ <path d="M389 214q5-5 10 0q5-5 10 0q-5-2-10 3q-5-5-10-3Z" opacity=".52"/>
+ <path d="M466 258q4-4 8 0q4-4 8 0q-4-1-8 3q-4-4-8-3Z" opacity=".50"/>
+</g>
+
+<!-- romantic heart constellation -->
+<g id="heartConstellation" transform="translate(493 108) scale(1.08)" opacity=".72">
+  <!-- soft heart-shaped aura -->
+  <path d="M24 51
+           C20 47 3 35 3 20
+           C3 9 14 4 23 13
+           C24 14 24 14 24 14
+           C25 14 25 14 26 13
+           C35 4 46 9 46 20
+           C46 35 29 47 24 51 Z"
+        fill="#f3cd7e" opacity=".045" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".025;.075;.025" dur="5.4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- smooth recognizable heart outline -->
+  <path d="M24 51
+           C20 47 3 35 3 20
+           C3 9 14 4 23 13
+           C24 14 24 14 24 14
+           C25 14 25 14 26 13
+           C35 4 46 9 46 20
+           C46 35 29 47 24 51 Z"
+        fill="none"
+        stroke="#f8e5b9"
+        stroke-width="1.15"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity=".42">
+    <animate attributeName="opacity" values=".30;.56;.30" dur="4.8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- constellation stars following the heart silhouette -->
+  <g fill="#fff6dc">
+    <circle cx="24" cy="14" r="1.75">
+      <animate attributeName="opacity" values=".58;1;.58" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.55;2.05;1.55" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="15" cy="7" r="1.7">
+      <animate attributeName="opacity" values=".52;.98;.52" dur="3.5s" begin=".25s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.5;1.95;1.5" dur="3.5s" begin=".25s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="6" cy="12" r="1.65">
+      <animate attributeName="opacity" values=".48;.94;.48" dur="3.8s" begin=".5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.45;1.9;1.45" dur="3.8s" begin=".5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="3" cy="22" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.6s" begin=".7s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="7" cy="32" r="1.55">
+      <animate attributeName="opacity" values=".44;.90;.44" dur="3.9s" begin=".4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="14" cy="41" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.7s" begin=".8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="24" cy="51" r="1.85">
+      <animate attributeName="opacity" values=".60;1;.60" dur="3.4s" begin=".2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.6;2.15;1.6" dur="3.4s" begin=".2s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="34" cy="41" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.6s" begin=".6s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="41" cy="32" r="1.55">
+      <animate attributeName="opacity" values=".44;.90;.44" dur="4s" begin=".3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="46" cy="22" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.5s" begin=".9s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="42" cy="12" r="1.65">
+      <animate attributeName="opacity" values=".48;.94;.48" dur="3.7s" begin=".45s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="33" cy="7" r="1.7">
+      <animate attributeName="opacity" values=".52;.98;.52" dur="3.3s" begin=".1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.5;1.95;1.5" dur="3.3s" begin=".1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- tiny central shimmer -->
+  <g stroke="#ffe9ad" stroke-linecap="round" opacity=".34">
+    <path d="M24 25v5M21.5 27.5h5" stroke-width=".7">
+      <animate attributeName="opacity" values=".16;.48;.16" dur="4.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</g>
+
+<!-- second romantic heart constellation on the opposite side -->
+<g id="heartConstellationLeft" transform="translate(62 108) scale(1.08)" opacity=".72">
+  <!-- soft heart-shaped aura -->
+  <path d="M24 51
+           C20 47 3 35 3 20
+           C3 9 14 4 23 13
+           C24 14 24 14 24 14
+           C25 14 25 14 26 13
+           C35 4 46 9 46 20
+           C46 35 29 47 24 51 Z"
+        fill="#f3cd7e" opacity=".045" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".025;.075;.025" dur="5.4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- smooth recognizable heart outline -->
+  <path d="M24 51
+           C20 47 3 35 3 20
+           C3 9 14 4 23 13
+           C24 14 24 14 24 14
+           C25 14 25 14 26 13
+           C35 4 46 9 46 20
+           C46 35 29 47 24 51 Z"
+        fill="none"
+        stroke="#f8e5b9"
+        stroke-width="1.15"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity=".42">
+    <animate attributeName="opacity" values=".30;.56;.30" dur="4.8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- constellation stars following the heart silhouette -->
+  <g fill="#fff6dc">
+    <circle cx="24" cy="14" r="1.75">
+      <animate attributeName="opacity" values=".58;1;.58" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.55;2.05;1.55" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="15" cy="7" r="1.7">
+      <animate attributeName="opacity" values=".52;.98;.52" dur="3.5s" begin=".25s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.5;1.95;1.5" dur="3.5s" begin=".25s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="6" cy="12" r="1.65">
+      <animate attributeName="opacity" values=".48;.94;.48" dur="3.8s" begin=".5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.45;1.9;1.45" dur="3.8s" begin=".5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="3" cy="22" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.6s" begin=".7s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="7" cy="32" r="1.55">
+      <animate attributeName="opacity" values=".44;.90;.44" dur="3.9s" begin=".4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="14" cy="41" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.7s" begin=".8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="24" cy="51" r="1.85">
+      <animate attributeName="opacity" values=".60;1;.60" dur="3.4s" begin=".2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.6;2.15;1.6" dur="3.4s" begin=".2s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="34" cy="41" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.6s" begin=".6s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="41" cy="32" r="1.55">
+      <animate attributeName="opacity" values=".44;.90;.44" dur="4s" begin=".3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="46" cy="22" r="1.6">
+      <animate attributeName="opacity" values=".46;.92;.46" dur="3.5s" begin=".9s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="42" cy="12" r="1.65">
+      <animate attributeName="opacity" values=".48;.94;.48" dur="3.7s" begin=".45s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="33" cy="7" r="1.7">
+      <animate attributeName="opacity" values=".52;.98;.52" dur="3.3s" begin=".1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.5;1.95;1.5" dur="3.3s" begin=".1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- tiny central shimmer -->
+  <g stroke="#ffe9ad" stroke-linecap="round" opacity=".34">
+    <path d="M24 25v5M21.5 27.5h5" stroke-width=".7">
+      <animate attributeName="opacity" values=".16;.48;.16" dur="4.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</g>
+
+<!-- subtle shooting star for extra life in the sky -->
+<g id="shootingStar" opacity="0">
+  <animate attributeName="opacity" values="0;0;0.65;0.65;0" dur="12s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="-40 0;-40 0;0 0;0 0;0 0" dur="12s" repeatCount="indefinite"/>
+  <g transform="translate(82 126) rotate(-17)">
+    <path d="M0 0 L34 0" stroke="#f6e3be" stroke-width="1.1" stroke-linecap="round" opacity=".42"/>
+    <path d="M8 0 L34 0" stroke="#f0c977" stroke-width=".7" stroke-linecap="round" opacity=".34"/>
+    <circle cx="0" cy="0" r="1.9" fill="#fff2cc">
+      <animate attributeName="r" values="1.5;2.2;1.5" dur="1.6s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</g>
+<g fill="#e6d5c5" opacity=".08" filter="url(#mistBlur)">
+ <ellipse cx="167" cy="520" rx="96" ry="14"/>
+ <ellipse cx="456" cy="506" rx="86" ry="12"/>
+</g>
+<!-- subtle framing branches in upper corners -->
+<g stroke="#0b0b12" fill="none" stroke-linecap="round" opacity=".62">
+  <path d="M-6 92Q25 98 49 117Q63 129 76 149" stroke-width="3.4"/>
+  <path d="M25 106q-10 8-18 20M38 114q8 11 10 24M56 132q10 5 18 17" stroke-width="1.55"/>
+  <path d="M606 84Q574 92 548 112Q534 123 520 144" stroke-width="3.2"/>
+  <path d="M578 100q10 9 17 20M562 110q-8 11-10 23M542 128q-10 4-17 15" stroke-width="1.5"/>
+</g>
+
+<!-- poster-like crooked silhouettes and cemetery -->
+<g fill="#080910" opacity=".98">
+  <path d="M0 595V457l20-44 7-77 15 63 28-55-13 74 31-24-27 53 18 24-39-12-12 136Z"/>
+  <path d="M600 585V443l-22-55-8-74-11 61-28-47 16 77-32-27 27 55-23 23 41-9 18 138Z"/>
+</g>
+
+<!-- subtle star decoration in the sky -->
+<g fill="#f6e1a9" opacity=".60">
+  <circle id="starBlink5" cx="52" cy="146" r="1.1"><animate attributeName="opacity" values=".45;1;.45" dur="2.6s" repeatCount="indefinite"/></circle><circle cx="84" cy="121" r=".9"/><circle cx="122" cy="166" r="1"/>
+  <circle id="starBlink6" cx="171" cy="133" r=".9"><animate attributeName="opacity" values=".4;.9;.4" dur="3.2s" begin=".5s" repeatCount="indefinite"/></circle><circle cx="208" cy="152" r="1.2"/><circle cx="258" cy="117" r=".9"/>
+  <circle cx="313" cy="141" r="1"/><circle id="starBlink7" cx="361" cy="123" r=".85"><animate attributeName="opacity" values=".4;1;.4" dur="3.8s" begin="1s" repeatCount="indefinite"/></circle><circle cx="422" cy="153" r="1.1"/>
+  <circle id="starBlink8" cx="476" cy="125" r=".95"><animate attributeName="opacity" values=".38;.9;.38" dur="2.9s" begin="1.2s" repeatCount="indefinite"/></circle><circle cx="524" cy="165" r=".9"/><circle cx="569" cy="139" r="1.05"/>
+</g>
+<g stroke="#f4d38c" stroke-linecap="round" opacity=".28">
+  <path d="M83 121v6M80 124h6" stroke-width=".8"/>
+  <path d="M258 117v5M255.5 119.5h5" stroke-width=".7"/>
+  <path d="M476 125v5M473.5 127.5h5" stroke-width=".7"/>
+</g>
+<!-- extra tiny sparkles for the upper area -->
+<g fill="#f7e8bb" opacity=".55">
+  <circle id="starBlink9" cx="144" cy="92" r=".9"><animate attributeName="opacity" values=".42;.95;.42" dur="3.2s" begin=".5s" repeatCount="indefinite"/></circle><circle cx="198" cy="108" r=".8"/><circle id="starBlink10" cx="344" cy="101" r=".9"><animate attributeName="opacity" values=".45;1;.45" dur="2.6s" repeatCount="indefinite"/></circle>
+  <circle cx="402" cy="86" r=".8"/><circle id="starBlink11" cx="516" cy="104" r=".9"><animate attributeName="opacity" values=".4;1;.4" dur="3.8s" begin="1s" repeatCount="indefinite"/></circle>
+  <circle cx="270" cy="86" r=".75"/><circle id="starBlink12" cx="307" cy="95" r=".7"><animate attributeName="opacity" values=".38;.85;.38" dur="2.9s" begin="1.2s" repeatCount="indefinite"/></circle><circle cx="451" cy="98" r=".75"/>
+</g>
+<g stroke="#f6ddb0" stroke-linecap="round" opacity=".22">
+  <path d="M143 89v5M140.5 91.5h5" stroke-width=".7"/>
+  <path d="M343 98v5M340.5 100.5h5" stroke-width=".7"/>
+  <path d="M515 101v5M512.5 103.5h5" stroke-width=".7"/>
+</g>
+
+<!-- smoky violet horizon -->
+<path d="M0 553Q95 509 185 535Q273 560 358 537Q450 511 600 531V649H0Z" fill="#161224"/>
+<path d="M0 582Q109 543 206 569Q296 594 394 565Q488 537 600 558V669H0Z" fill="#0c0d18" opacity=".95"/>
+<g fill="#d6c0b2" opacity=".065" filter="url(#mistBlur)">
+ <ellipse cx="145" cy="548" rx="115" ry="16"/><ellipse cx="417" cy="554" rx="142" ry="19"/>
+</g>
+<!-- cemetery ridge recreated by hand closer to the poster decoration -->
+<!-- violet haze behind the ridge -->
+<path d="M0 584
+         Q73 555 141 566
+         Q202 577 258 560
+         Q323 541 391 560
+         Q457 578 600 551
+         V679H0Z"
+      fill="#171324"/>
+<path d="M0 609
+         Q82 580 151 591
+         Q216 601 279 587
+         Q351 571 425 590
+         Q509 613 600 587
+         V705H0Z"
+      fill="#0c0d18" opacity=".96"/>
+<g fill="#d7c2b5" opacity=".06" filter="url(#mistBlur)">
+  <ellipse cx="168" cy="585" rx="112" ry="20"/>
+  <ellipse cx="388" cy="578" rx="132" ry="19"/>
+</g>
+<!-- soft violet haze over the mountains -->
+<g fill="#6d5a89" opacity=".11" filter="url(#mistBlur)">
+  <ellipse cx="130" cy="604" rx="136" ry="23"/>
+  <ellipse cx="320" cy="597" rx="122" ry="20"/>
+  <ellipse cx="496" cy="606" rx="142" ry="22"/>
+</g>
+
+<!-- rocky blue-black ridge -->
+<path d="M0 718
+         Q38 697 79 688
+         Q118 680 156 684
+         Q197 689 231 683
+         Q267 677 305 685
+         Q338 692 369 712
+         L369 738
+         Q333 730 296 726
+         Q255 722 214 727
+         Q167 733 124 735
+         Q73 736 0 746Z"
+      fill="#17192c"/>
+
+<!-- lighter, less crowded stone line -->
+<g fill="#464b5e" stroke="#20222f" stroke-width=".9" opacity=".72">
+ <path d="M4 709l12-9 13 5 5 10-12 7-15-4z"/>
+ <path d="M48 697l12-9 14 5 5 10-11 8-15-2z"/>
+ <path d="M94 687l13-9 15 4 5 10-12 8-16-2z"/>
+ <path d="M143 681l13-8 14 4 5 9-12 8-15-2z"/>
+ <path d="M194 681l12-8 15 4 5 9-12 8-15-3z"/>
+ <path d="M248 684l12-7 15 5 4 9-12 7-15-3z"/>
+ <path d="M304 691l12-7 14 5 4 9-12 7-15-4z"/>
+ <path d="M360 701l12-7 14 5 3 9-12 7-14-4z"/>
+ <path d="M418 711l12-7 14 5 3 9-12 7-14-4z"/>
+ <path d="M476 720l12-7 14 5 3 9-12 7-14-4z"/>
+ <path d="M536 729l12-7 14 5 3 9-12 7-14-4z"/>
+</g>
+
+<!-- simplified crooked fence -->
+<g stroke="#08090f" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+  <path d="M-10 648Q35 633 78 635Q120 637 159 646Q201 655 243 651Q286 648 330 654Q352 657 366 656" stroke-width="3.8"/>
+  <path d="M-10 665Q35 652 78 654Q120 656 159 664Q201 672 243 668Q286 666 330 671Q352 674 366 673" stroke-width="3"/>
+  <g stroke-width="2.7">
+    <path d="M14 626v61M56 630v58M99 634v55M143 640v50M190 647v45M239 650v43M289 653v40M336 655v37"/>
+  </g>
+  <path d="M14 626l-6-12m48 16 6-12m37 16-4-12m48 18 7-12m40 19-4-12m49 15 7-11m40 17-5-11m49 15 6-10" stroke-width="2"/>
+</g>
+
+<!-- distant fence and tiny posts -->
+<g stroke="#11111a" fill="none" stroke-linecap="round" opacity=".78">
+  <path d="M382 683v23m0-23l4-3m18 13v18m0-18l3-2m20 12v14m0-14l3-2" stroke-width="1.45"/>
+</g>
+<!-- extra distant cemetery details -->
+<g fill="#090a12" stroke="#2f2b36" stroke-width=".7" opacity=".82">
+  <path d="M430 677v18h-6v-18h-5v-4h5v-7h5v7h5v4z"/>
+  <path d="M458 682q7-5 13 0l-1 21-10 3-4-17z"/>
+  <path d="M486 688v14h-5v-14h-4v-3h4v-6h4v6h4v3z"/>
+</g>
+
+<!-- glowing pumpkins across the ridge, simplified -->
+<g class="pumpkin">
+ <use href="#jack-o" transform="translate(34 662) scale(.17) rotate(-6)"/>
+ <use href="#jack-o" transform="translate(88 646) scale(.21) rotate(3)"/>
+ <use href="#jack-o" transform="translate(145 652) scale(.18) rotate(-4)"/>
+ <use href="#jack-o" transform="translate(204 647) scale(.19) rotate(4)"/>
+ <use href="#jack-o" transform="translate(265 657) scale(.17) rotate(-3)"/>
+ <use href="#jack-o" transform="translate(326 666) scale(.14) rotate(4)"/>
+</g>
+<g fill="#f78729" opacity=".16" filter="url(#pumpGlow)">
+ <circle id="pumpGlow1" cx="88" cy="646" r="14"><animate attributeName="opacity" values=".10;.36;.10" dur="2.8s" repeatCount="indefinite"/></circle>
+ <circle id="pumpGlow2" cx="204" cy="647" r="13"><animate attributeName="opacity" values=".10;.34;.10" dur="3.3s" begin=".4s" repeatCount="indefinite"/></circle>
+ <circle cx="265" cy="657" r="11"><animate attributeName="opacity" values=".08;.28;.08" dur="2.7s" begin=".8s" repeatCount="indefinite"/></circle>
+</g>
+<g fill="#ff9335" opacity=".18" filter="url(#glow)">
+ <ellipse cx="34" cy="662" rx="16" ry="10"><animate attributeName="opacity" values=".06;.28;.06" dur="2.6s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="88" cy="646" rx="24" ry="16"><animate attributeName="opacity" values=".07;.30;.07" dur="3s" begin=".3s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="145" cy="652" rx="18" ry="12"><animate attributeName="opacity" values=".05;.24;.05" dur="2.9s" begin=".7s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="204" cy="647" rx="22" ry="15"><animate attributeName="opacity" values=".07;.30;.07" dur="3.2s" begin=".5s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="265" cy="657" rx="18" ry="12"><animate attributeName="opacity" values=".05;.24;.05" dur="2.8s" begin="1s" repeatCount="indefinite"/></ellipse>
+</g>
+
+<!-- broad spiral hill, weighted like the poster -->
+<use href="#mainHillShape" fill="url(#posterHill)" stroke="#49465a" stroke-width="6.5"/>
+<use href="#mainHillShape" fill="url(#barkDense)" opacity=".95"/>
+<!-- sculpted ridges following the large hill -->
+<g clip-path="url(#mainHillClip)" fill="none" stroke-linecap="round">
+ <path d="M640 892Q551 856 498 795Q448 738 443 658Q439 582 413 507" stroke="#777185" stroke-width="1.15" opacity=".34"/>
+ <path d="M622 860Q535 826 485 770Q440 718 433 646Q427 576 397 507" stroke="#777185" stroke-width="1" opacity=".28"/>
+ <path d="M603 828Q520 796 474 743Q432 694 421 633Q413 569 382 507" stroke="#777185" stroke-width=".95" opacity=".26"/>
+ <path d="M581 800Q507 763 468 708Q432 658 422 606Q412 553 377 503" stroke="#777185" stroke-width=".9" opacity=".23"/>
+ <path d="M557 776Q490 741 455 690Q422 644 411 594Q401 547 362 500" stroke="#777185" stroke-width=".85" opacity=".22"/>
+ <path d="M231 483Q203 511 207 542Q211 568 233 579Q257 590 282 579Q307 568 319 545" stroke="#9690a0" stroke-width="1.3" opacity=".32"/>
+</g>
+<!-- dark cuts / tomb shapes in the right face -->
+<g fill="#070810" stroke="#676273" stroke-width="1.05" opacity=".98">
+ <path d="M528 648q15-10 28-2l-3 82-21 9-9-67z"/>
+ <path d="M554 779q13-10 25-2l-3 100-22 4-6-80z"/>
+ <path d="M489 742q10-7 19 0l-2 58-17 4-4-49z"/>
+</g>
+<g fill="none" stroke="#8c8797" opacity=".20" stroke-width="1">
+ <path d="M532 663l17-5M532 675l18-4M555 798l18-4M495 755l12-3"/>
+</g>
+<!-- extra bark channels and deep shadow cuts on the large trunk -->
+<g clip-path="url(#mainHillClip)" fill="none" stroke-linecap="round">
+ <path d="M545 902Q508 838 505 775Q500 701 513 631Q525 576 502 531" stroke="#9891a0" stroke-width=".68" opacity=".17"/>
+ <path d="M525 910Q486 847 482 784Q477 713 489 647Q500 594 480 544" stroke="#8e8898" stroke-width=".68" opacity=".16"/>
+ <path d="M505 914Q465 853 461 790Q457 719 468 655Q476 606 458 558" stroke="#7e7888" stroke-width=".7" opacity=".14"/>
+ <path d="M563 875Q536 816 535 756Q533 690 548 625" stroke="#716b7c" stroke-width=".76" opacity=".14"/>
+</g>
+<g fill="#06070f" opacity=".96">
+ <path d="M522 641q12-18 27-4l-4 70-20 13-7-55z"/>
+ <path d="M550 761q11-14 24-4l-4 72-18 12-6-57z"/>
+</g>
+<!-- Jack refined again to resemble the original poster more closely -->
+<g transform="translate(316 439) rotate(-6)" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ultra-thin legs and shoes -->
+  <path d="M-5-71L-8-37 -20 1 -13 3 -1-31 1-49 10 2 17 1 10-43 8-71Z" fill="#0f1018" stroke="#05050a" stroke-width="1.8"/>
+  <path d="M-8-37L-20 1M1-49L10 2" stroke="#d8d1c3" stroke-width=".95" opacity=".75"/>
+  <path d="M-20 1q-8 2-12 6q9 2 16-1M10 2q8 0 13 4q-7 4-15 0" fill="#0f1018" stroke="#05050a" stroke-width="1"/>
+
+  <!-- very narrow torso and long coattails -->
+  <path d="M-12-110Q-18-100-16-85L-12-58 -21-32 -6-44 0-63 12-31 7-72 10-98 0-112Z" fill="#10111a" stroke="#07070d" stroke-width="1.7"/>
+  <g stroke="#efe7d6" stroke-width=".75" opacity=".85">
+    <path d="M-13-103l7 49M-9-107l8 43M-4-109l5 48M1-108l5 55M6-104l5 47M10-99l3 33"/>
+  </g>
+  <path d="M-6-112l6 14 5-15 -5 5Z" fill="#f3eedf"/>
+
+  <!-- shoulders and arms in the poster-like pose -->
+  <path d="M-14-102Q-28-94-38-81Q-46-71-48-58" fill="none" stroke="#10111a" stroke-width="4.2"/>
+  <path d="M-14-102Q-28-94-38-81Q-46-71-48-58" fill="none" stroke="#eee6d4" stroke-width="1.15"/>
+  <path d="M9-102Q20-94 30-80Q39-68 45-53" fill="none" stroke="#10111a" stroke-width="4.2"/>
+  <path d="M9-102Q20-94 30-80Q39-68 45-53" fill="none" stroke="#eee6d4" stroke-width="1.15"/>
+
+  <!-- skeletal hands -->
+  <g stroke="#e9e1cf" stroke-width="1.05" fill="none">
+    <path d="M-48-58l-10 4m10-4-9-3m9 3-7 8m7-8-2 10"/>
+    <path d="M45-53l10-5m-10 5 10 1m-10-1 7 8m-7-8 2 10"/>
+  </g>
+
+  <!-- bat bowtie -->
+  <path d="M-1-104L-26-116 -19-104 -31-100 -8-97 -1-101 7-97 29-100 17-104 24-117 2-104Z" fill="#11121a" stroke="#0b0c13" stroke-width="1.1"/>
+  <path d="M-2-103l-3-4 4-2 4 3-1 4Z" fill="#e8e1d3"/>
+
+  <!-- neck -->
+  <path d="M-3-114L-4-131M2-114L2-131" stroke="#eee6d7" stroke-width="1.9"/>
+
+  <!-- skull closer to the movie poster -->
+  <path d="M-1-186
+           C-20-186 -31-173 -33-155
+           C-35-136 -24-123 -10-118
+           C-8-111 7-111 11-118
+           C25-124 34-138 33-156
+           C32-174 20-186 -1-186Z"
+        fill="#f6eedc" stroke="#191823" stroke-width="1.55"/>
+
+  <!-- subtle highlight / contour -->
+  <path d="M-19-165Q-14-177 -2-179" stroke="#fffdf8" stroke-opacity=".42" stroke-width="1.6" fill="none"/>
+  <path d="M19-162Q26-150 22-140" stroke="#fffdf8" stroke-opacity=".25" stroke-width="1.4" fill="none"/>
+
+  <!-- large black eye sockets -->
+  <path d="M-25-157Q-24-169 -13-170Q-2-170 -2-157Q-2-144 -13-144Q-24-144 -25-157Z" fill="#12121b"/>
+  <path d="M3-157Q3-170 14-170Q25-169 24-156Q24-144 14-144Q3-144 3-157Z" fill="#12121b"/>
+
+  <!-- triangular nose -->
+  <path d="M-1-145l-4 6 5-1 4 1Z" fill="#171720"/>
+
+  <!-- iconic stitched grin -->
+  <path d="M-24-140Q-1-116 24-140" fill="none" stroke="#171720" stroke-width="1.8"/>
+  <g stroke="#171720" stroke-width=".95" fill="none">
+    <path d="M-22-141l-4 5M-18-137l-4 6M-13-133l-3 6M-8-129l-2 6M-2-126l-1 6M4-126l1 6M10-129l2 6M15-133l3 6M20-138l4 5"/>
+  </g>
+</g>
+<!-- foreground hill with dense bark texture and pumpkins -->
+
+<!-- sparse tiny gothic details in the background -->
+<g stroke="#0c0d14" fill="none" stroke-linecap="round" opacity=".52">
+  <path d="M468 705v16m0-16l3-2" stroke-width="1.1"/>
+</g>
+
+<use href="#frontHillShape" fill="url(#frontHill)" stroke="#4b4659" stroke-width="4"/>
+<use href="#frontHillShape" fill="url(#barkDense)" opacity=".98"/>
+<g clip-path="url(#frontHillClip)" fill="none" stroke-linecap="round">
+ <path d="M-16 757Q42 718 103 705Q166 692 222 704Q279 716 334 721Q392 726 449 713Q507 700 617 736" stroke="#918a9a" stroke-width="1.12" opacity=".35"/>
+ <path d="M-6 787Q51 749 113 736Q176 723 232 735Q289 747 343 752Q399 757 456 745Q513 733 620 766" stroke="#837d8d" stroke-width="1.01" opacity=".29"/>
+ <path d="M8 818Q66 781 128 770Q191 759 247 770Q302 781 355 786Q410 791 465 780Q520 770 621 800" stroke="#787283" stroke-width=".95" opacity=".25"/>
+ <path d="M26 852Q82 819 144 808Q204 798 259 808Q314 818 366 823Q419 829 472 820Q523 811 618 839" stroke="#6c6777" stroke-width=".9" opacity=".22"/>
+</g>
+<!-- cleaner crooked fence and sparse branches in front -->
+<g stroke="#080910" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".90">
+ <path d="M0 709Q58 692 113 696T228 709T346 716T489 709T612 714" stroke-width="3.5"/>
+ <path d="M0 726Q56 711 111 715T224 726T343 732T487 726T610 730" stroke-width="2.9"/>
+ <g stroke-width="2.55">
+  <path d="M34 672v88M77 675v84M121 679v79M167 684v73M214 689v67M262 695v61M311 700v56M360 704v52M414 707v48M474 709v44M548 707v47"/>
+ </g>
+ <g stroke-width="3.45">
+  <path d="M10 705Q34 677 61 664"/>
+  <path d="M100 711Q114 686 129 669"/>
+  <path d="M194 718Q210 694 228 675"/>
+  <path d="M336 728Q350 703 369 684"/>
+  <path d="M505 718Q519 696 537 682"/>
+ </g>
+ <g stroke-width="2">
+  <path d="M59 668l-7-13M123 672l8-14M220 679l-8-14M366 686l9-14"/>
+ </g>
+</g>
+
+<!-- the entire lower terrain is now one continuous textured hill -->
+<!-- graves near the viewer -->
+<g fill="#0a0a13" stroke="#3e3948" stroke-width="1.2">
+ <path d="M418 916v-108h-17v-12h17v-22h12v22h17v12h-17v108z"/>
+ <path d="M540 918v-132h-20v-14h20v-26h14v26h20v14h-20v132z"/>
+</g>
+<!-- foreground jack-o-lanterns like the poster -->
+<!-- four special pumpkins: the golden halo travels from one to the next -->
+<g id="specialPumpkinHalos">
+  <ellipse id="choiceHalo1" class="choice-halo" cx="18" cy="790" rx="47" ry="36" fill="#ffb23f" filter="url(#glow)"/>
+  <ellipse id="choiceHalo2" class="choice-halo" cx="138" cy="751" rx="43" ry="33" fill="#ffb23f" filter="url(#glow)"/>
+  <ellipse id="choiceHalo3" class="choice-halo" cx="218" cy="789" rx="35" ry="27" fill="#ffb23f" filter="url(#glow)"/>
+  <ellipse id="choiceHalo4" class="choice-halo" cx="300" cy="758" rx="42" ry="32" fill="#ffb23f" filter="url(#glow)"/>
+
+  <ellipse id="choiceRing1" class="choice-ring" cx="18" cy="790" rx="39" ry="30" fill="none" stroke="#ffd978" stroke-width="1.4"/>
+  <ellipse id="choiceRing2" class="choice-ring" cx="138" cy="751" rx="36" ry="28" fill="none" stroke="#ffd978" stroke-width="1.4"/>
+  <ellipse id="choiceRing3" class="choice-ring" cx="218" cy="789" rx="29" ry="22" fill="none" stroke="#ffd978" stroke-width="1.4"/>
+  <ellipse id="choiceRing4" class="choice-ring" cx="300" cy="758" rx="35" ry="27" fill="none" stroke="#ffd978" stroke-width="1.4"/>
+</g>
+
+<g class="pumpkin">
+ <use id="specialPumpkin1" class="pumpkin-choice" href="#jack-o" transform="translate(18 790) scale(1.02) rotate(-7)" aria-label="Calabaza especial 1"/>
+ <use href="#jack-o" transform="translate(75 739) scale(.52) rotate(5)"/>
+ <use id="specialPumpkin2" class="pumpkin-choice" href="#jack-o" transform="translate(138 751) scale(.84) rotate(-4)" aria-label="Calabaza especial 2"/>
+ <use id="specialPumpkin3" class="pumpkin-choice" href="#jack-o" transform="translate(218 789) scale(.60) rotate(6)" aria-label="Calabaza especial 3"/>
+ <use id="specialPumpkin4" class="pumpkin-choice" href="#jack-o" transform="translate(300 758) scale(.80) rotate(-5)" aria-label="Calabaza especial 4"/>
+ <use href="#jack-o" transform="translate(112 850) scale(.60) rotate(5)"/>
+</g>
+<g fill="#f5822c" opacity=".14" filter="url(#pumpGlow)">
+ <ellipse id="pumpGlow6" cx="18" cy="794" rx="50" ry="34"><animate attributeName="opacity" values=".09;.30;.09" dur="3.1s" repeatCount="indefinite"/></ellipse>
+ <ellipse id="pumpGlow3" cx="138" cy="757" rx="46" ry="29"><animate attributeName="opacity" values=".08;.28;.08" dur="2.7s" begin=".4s" repeatCount="indefinite"/></ellipse>
+ <ellipse id="pumpGlow4" cx="300" cy="764" rx="42" ry="26"><animate attributeName="opacity" values=".08;.28;.08" dur="3.3s" begin=".9s" repeatCount="indefinite"/></ellipse>
+</g>
+<g fill="#ff983d" opacity=".17" filter="url(#glow)">
+ <ellipse cx="18" cy="794" rx="66" ry="42"><animate attributeName="opacity" values=".05;.26;.05" dur="3s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="75" cy="741" rx="22" ry="14"><animate attributeName="opacity" values=".04;.18;.04" dur="2.6s" begin=".8s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="138" cy="757" rx="58" ry="36"><animate attributeName="opacity" values=".05;.26;.05" dur="2.9s" begin=".3s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="218" cy="791" rx="28" ry="18"><animate attributeName="opacity" values=".04;.18;.04" dur="2.7s" begin=".5s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="300" cy="764" rx="54" ry="34"><animate attributeName="opacity" values=".05;.26;.05" dur="3.2s" begin=".9s" repeatCount="indefinite"/></ellipse>
+ <ellipse cx="112" cy="852" rx="26" ry="16"><animate attributeName="opacity" values=".04;.16;.04" dur="2.8s" begin="1.1s" repeatCount="indefinite"/></ellipse>
+</g>
+<!-- extra low mist in the foreground -->
+<g fill="#d7c8cf" opacity=".055" filter="url(#mistBlur)">
+ <ellipse cx="92" cy="874" rx="112" ry="16"/>
+ <ellipse cx="278" cy="868" rx="140" ry="18"/>
+ <ellipse cx="498" cy="886" rx="132" ry="17"/>
+</g>
+<g class="pumpkin">
+ <use href="#jack-o" transform="translate(226 731) scale(.46) rotate(-10)"/>
+</g>
+<g fill="#f5822c" opacity=".13" filter="url(#pumpGlow)">
+ <ellipse id="pumpGlow5" cx="227" cy="735" rx="21" ry="14"><animate attributeName="opacity" values=".08;.28;.08" dur="2.7s" begin=".6s" repeatCount="indefinite"/></ellipse>
+</g>
+<g fill="#ff9b40" opacity=".15" filter="url(#glow)">
+ <ellipse cx="227" cy="735" rx="31" ry="20"><animate attributeName="opacity" values=".04;.20;.04" dur="2.9s" begin=".9s" repeatCount="indefinite"/></ellipse>
+</g>
+
+<!-- robust invisible hit zones for the four interactive pumpkins -->
+<g id="pumpkinHitZones">
+  <ellipse id="pumpkinHit1" class="pumpkin-hit" data-message-index="0" cx="18" cy="790" rx="45" ry="38" tabindex="0" role="button" aria-label="Abrir primer mensaje"/>
+  <ellipse id="pumpkinHit2" class="pumpkin-hit" data-message-index="1" cx="138" cy="751" rx="40" ry="34" tabindex="0" role="button" aria-label="Abrir segundo mensaje"/>
+  <ellipse id="pumpkinHit3" class="pumpkin-hit" data-message-index="2" cx="218" cy="789" rx="34" ry="29" tabindex="0" role="button" aria-label="Abrir tercer mensaje"/>
+  <ellipse id="pumpkinHit4" class="pumpkin-hit" data-message-index="3" cx="300" cy="758" rx="40" ry="34" tabindex="0" role="button" aria-label="Abrir cuarto mensaje"/>
+</g>
+
+<!-- wiry roots and vines over the foreground mound -->
+<g stroke="#4a4657" fill="none" stroke-linecap="round" opacity=".75">
+ <path d="M54 728q15 16 25 39m-7-18q10 6 16 19" stroke-width="1.6"/>
+ <path d="M108 707q18 20 28 48m-5-15q10 8 17 24" stroke-width="1.7"/>
+ <path d="M173 720q14 17 22 39m-6-14q8 7 14 22" stroke-width="1.5"/>
+ <path d="M274 728q12 20 18 41m-2-12q7 7 11 19" stroke-width="1.4"/>
+ <path d="M360 758q15 18 24 43m-5-15q9 7 15 21" stroke-width="1.35"/>
+ <path d="M462 776q14 17 23 38m-4-12q8 6 13 18" stroke-width="1.25"/>
+ <path d="M540 770q13 16 20 36m-3-10q7 6 11 16" stroke-width="1.2"/>
+ <path d="M226 742q9 12 15 30m-3-10q6 4 9 13" stroke-width="1.1"/>
+ <path d="M410 782q10 14 16 30m-3-9q5 4 9 12" stroke-width="1.05"/>
+</g>
+
+<!-- blue-violet shadow pockets and mist -->
+<path d="M-35 778Q78 750 176 763T367 777Q470 785 640 762" fill="none" stroke="url(#mist)" stroke-width="16" filter="url(#blur8)" opacity=".40"/>
+<g stroke="#090a10" stroke-width="2" opacity=".92">
+ <path d="M71 919l-9-33m9 33 5-35m0 35 14-25M251 918l-4-29m4 29 12-26M472 918l-8-32m8 32 13-27"/>
+</g>
+</g>
+</svg>
+</main>
+
+<section id="carta" class="letter-section" aria-labelledby="titulo-carta">
+  <div class="letter-card">
+    <p class="letter-kicker">Has encontrado el mensaje</p>
+    <h2 id="titulo-carta" class="letter-title">La carta</h2>
+    <p class="letter-placeholder">
+      <strong>Aquí irá el mensaje especial para ella.</strong><br>
+      Ya dejé preparada esta sección para que ahora construyamos juntos la carta.
+    </p>
+    <div class="letter-moon" aria-hidden="true"></div>
+  </div>
+</section>
+
+
+
+<footer class="creator-signature" aria-label="Créditos">
+  Hecho por <span>Isco</span>
+</footer>
+
+<div id="messageOverlay" class="message-overlay" aria-hidden="true">
+  <div id="messagePanel" class="message-panel theme-prayer origin-1" role="dialog" aria-modal="true" aria-labelledby="messageTitle">
+    <div class="message-ornaments" aria-hidden="true">
+      <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+    </div>
+    <button id="messageClose" class="message-close" aria-label="Cerrar mensaje">×</button>
+
+    <div class="message-header">
+      <div id="messageDecoration" class="message-decoration" aria-hidden="true">
+        <span class="deco-side"><i></i></span><span class="deco-main"></span><span class="deco-side"><i></i></span>
+      </div>
+      <p id="messageKicker" class="message-kicker">Primera calabaza</p>
+      <h2 id="messageTitle" class="message-title">Eres el amor de mis oraciones</h2>
+      <p id="messageSubtitle" class="message-subtitle">Un pedacito de mi corazón para ti</p>
+    </div>
+
+    <div class="message-body">
+      <div id="messageScroll" class="message-scroll">
+        <div id="messageText" class="message-text"></div>
+      </div>
+      <p class="message-hint">Cada calabaza guarda algo diferente para ti</p>
+    </div>
+
+    <div id="messageProgress" class="message-progress" aria-label="Mensajes de las cuatro calabazas">
+      <button class="message-pumpkin-dot active" data-modal-index="0" type="button" aria-label="Ver primer mensaje"></button>
+      <button class="message-pumpkin-dot" data-modal-index="1" type="button" aria-label="Ver segundo mensaje"></button>
+      <button class="message-pumpkin-dot" data-modal-index="2" type="button" aria-label="Ver tercer mensaje"></button>
+      <button class="message-pumpkin-dot" data-modal-index="3" type="button" aria-label="Ver cuarto mensaje"></button>
+    </div>
+
+    <div id="messageFinale" class="message-finale">Felices 2 meses mi amor</div>
+
+    <div class="message-footer">
+      <button id="messageBack" class="message-btn secondary" type="button">Volver con Jack</button>
+      <button id="messageNext" class="message-btn primary" type="button">Descubrir el siguiente mensaje</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="completionBanner" class="completion-banner" aria-hidden="true">
+  <strong>Descubriste todos los mensajes</strong>
+  Ya descubriste todos mis mensajes para ti ♡
+</div>
+
+<div id="grandCelebration" class="grand-celebration" aria-hidden="true">
+  <div id="fireworksLayer" class="fireworks-layer"></div>
+  <div class="celebration-text">Te amo mi princesa</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const bubble = document.querySelector('.jack-bubble');
+
+  if (bubble) {
+    setTimeout(function () {
+      bubble.classList.remove('is-hiding');
+      bubble.classList.add('is-visible');
+
+      setTimeout(function () {
+        bubble.classList.remove('is-visible');
+        bubble.classList.add('is-hiding');
+      }, 7600);
+    }, 1200);
+  }
+
+  const starIds = [
+    'starBlink1','starBlink2','starBlink3','starBlink4','starBlink5','starBlink6',
+    'starBlink7','starBlink8','starBlink9','starBlink10','starBlink11','starBlink12'
+  ];
+  const pumpIds = ['pumpGlow1','pumpGlow2','pumpGlow3','pumpGlow4','pumpGlow5','pumpGlow6'];
+
+  const stars = starIds.map(id => document.getElementById(id)).filter(Boolean);
+  const pumpkins = pumpIds.map(id => document.getElementById(id)).filter(Boolean);
+
+  stars.forEach(function(el, i){
+    let on = false;
+    const tag = el.tagName.toLowerCase();
+    const baseR = tag === 'circle' ? (parseFloat(el.getAttribute('r')) || 1) : null;
+
+    setInterval(function(){
+      on = !on;
+      el.style.opacity = on ? '0.88' : '0.48';
+      el.style.filter = on
+        ? 'drop-shadow(0 0 2.4px rgba(255,239,191,.58))'
+        : 'drop-shadow(0 0 0.6px rgba(255,239,191,.10))';
+
+      if (tag === 'circle' && baseR !== null) {
+        el.setAttribute('r', on ? (baseR * 1.06).toFixed(2) : baseR);
+      }
+    }, 1200 + (i * 150));
+  });
+
+  pumpkins.forEach(function(el, i){
+    let on = false;
+    setInterval(function(){
+      on = !on;
+      el.style.opacity = on ? '0.52' : '0.14';
+      el.style.filter = on
+        ? 'drop-shadow(0 0 14px rgba(255,145,35,.96)) drop-shadow(0 0 28px rgba(255,120,20,.76))'
+        : 'drop-shadow(0 0 3px rgba(255,130,30,.25))';
+      el.style.transform = on ? 'scale(1.08)' : 'scale(1)';
+    }, 760 + (i * 90));
+  });
+
+  // Four clearly special pumpkins. Their golden highlight travels one by one.
+  const specialPumpkins = [1,2,3,4].map(n => document.getElementById('specialPumpkin' + n));
+  const choiceHalos = [1,2,3,4].map(n => document.getElementById('choiceHalo' + n));
+  const choiceRings = [1,2,3,4].map(n => document.getElementById('choiceRing' + n));
+  const visitedMessages = new Set();
+  let activeChoice = 0;
+
+  function highlightChoice(index){
+    specialPumpkins.forEach((pumpkin, i) => {
+      if (!pumpkin) return;
+      pumpkin.classList.toggle('active-choice', i === index);
+      pumpkin.classList.toggle('visited-choice', visitedMessages.has(i) && i !== index);
+    });
+    choiceHalos.forEach((halo, i) => {
+      if (!halo) return;
+      halo.classList.toggle('active', i === index);
+      halo.classList.toggle('visited', visitedMessages.has(i) && i !== index);
+    });
+    choiceRings.forEach((ring, i) => {
+      if (!ring) return;
+      ring.classList.toggle('active', i === index);
+      ring.classList.toggle('visited', visitedMessages.has(i) && i !== index);
+    });
+  }
+
+  highlightChoice(0);
+  setInterval(function(){
+    activeChoice = (activeChoice + 1) % 4;
+    highlightChoice(activeChoice);
+  }, 1350);
+
+  const overlay = document.getElementById('messageOverlay');
+  const closeBtn = document.getElementById('messageClose');
+  const backBtn = document.getElementById('messageBack');
+  const nextBtn = document.getElementById('messageNext');
+  const messageKicker = document.getElementById('messageKicker');
+  const messageTitle = document.getElementById('messageTitle');
+  const messageSubtitle = document.getElementById('messageSubtitle');
+  const messageText = document.getElementById('messageText');
+  const messagePanel = document.getElementById('messagePanel');
+  const messageDecoration = document.getElementById('messageDecoration');
+  const messageDots = Array.from(document.querySelectorAll('.message-pumpkin-dot'));
+  const completionBanner = document.getElementById('completionBanner');
+  const grandCelebration = document.getElementById('grandCelebration');
+  const fireworksLayer = document.getElementById('fireworksLayer');
+  let allMessagesCelebrated = false;
+  let pendingFinalCelebration = false;
+  const messages = [
+    {
+      kicker: 'Primera calabaza',
+      title: 'Eres el amor de mis oraciones',
+      subtitle: 'Un pedacito de mi corazón para ti',
+      theme: 'theme-prayer',
+      decoration: '<span class="deco-side"><i></i></span><span class="deco-main"></span><span class="deco-side"><i></i></span>',
+      text: [
+        "Felices dos meses mi amor",
+        "Hoy miro lo que estamos viviendo y no puedo evitar agradecerle a Dios por haberte puesto en mi camino. Antes de conocerte yo no podía imaginar que pudiera enamorarme tanto así como lo estoy de ti, pero el día que te vi por primera vez me enamore perdidamente de ti, sin importar que no conocía tu voz ni tu sonrisa ni esa manera tuya de hacerme sentir acompañado incluso cuando estamos lejos. Pero en mis oraciones había un deseo de encontrar a alguien con quien pudiera compartir mi cariño sin miedo y construir algo bonito y sincero. Ahora que estás conmigo pienso en cuánto deseaba un amor como el que siento por ti.",
+        "Eres el amor de mis oraciones porque contigo puedo hablar de lo que siento y también imaginar lo que todavía quiero vivir, me dan ganas de contarte cómo estuvo mi día y saber cómo estuvo el tuyo, quiero escucharte cuando estás emocionada por algo y también cuando tienes tantas cosas encima que ni siquiera sabes por dónde empezar, me importa lo que te pasa porque te amo y porque tu vida se ha vuelto muy valiosa para mí.",
+        "Me gusta pensar que mientras yo le pedía a Dios alguien a quien amar tú estabas viviendo tu historia sin saber que algún día nuestras vidas iban a encontrarse. Y ahora aquí estamos cumpliendo dos meses juntos y llenando de significado cosas que antes parecían tan pequeñas como un mensaje tuyo me alegra el día, escucharte me da tranquilidad, Tener un momento contigo se vuelve lo mejor de mi vida.",
+        "Desde que llegaste también cambiaron mis oraciones, ahora le pido a Dios que te cuide cuando sales y que te permita regresar bien a casa. Le pido que te dé salud y fuerzas para tus estudios y que te acompañe cuando yo no pueda estar cerca. Le pido que te ayude a reconocer lo hermosa y capaz que eres. Y también le pido que me enseñe a amarte bien porque quiero que mis acciones te hagan sentir el mismo amor que intento expresarte con mis palabras.",
+        "No sé todo lo que nos espera pero sí sé que quiero seguir conociéndote. Quiero descubrir más de tus gustos y de tus sueños y de esas cosas que tal vez todavía te cuesta contar. Quiero que poco a poco tengas la confianza de mostrarte conmigo tal como eres. No tienes que tener siempre una sonrisa ni saber qué decir. También quiero acompañarte en los días en los que solo necesitas descansar y sentir que alguien está ahí.",
+        "Gracias por estos dos meses mi princesa. Por dejarme entrar en tu vida y por darme tantos motivos para sonreír cuando pienso en nosotros. Hoy vuelvo a darle gracias a Dios por ti y le pido que nos ayude a cuidar lo que estamos construyendo.",
+        "Te amo mi amoorcito es tan bonito poder pensar en ti cuando agradezco y cuando pido por lo que más quiero que es permanecer a tu lado."
+      ]
+    },
+    {
+      kicker: 'Segunda calabaza',
+      title: 'Lo que amo de ti',
+      subtitle: 'Todo eso que te hace ser tú',
+      theme: 'theme-love',
+      decoration: '<span class="deco-side"><i></i></span><span class="deco-main"></span><span class="deco-side"><i></i></span>',
+      text: [
+        "Mi princesa hoy cumplimos dos meses juntos y quise escribirte las primeras 100 cosas que me gustan de ti. Algunas son detalles que tal vez tú ni siquiera notas y otras son sentimientos que despiertas en mí desde que llegaste. Quiero que puedas leerlas y recordar cuánto me encantas incluso en esos días en los que te cuesta verte con cariño.",
+        "1. Tu sonrisa y las ganas que me dan de sonreír contigo.",
+        "2. Tus ojos y lo mucho que me gusta mirarlos.",
+        "3. Tu voz que siempre quiero escuchar un ratito más.",
+        "4. Tu risa cuando algo te hace gracia de verdad.",
+        "5. Tu cabello y cómo forma parte de ese rostro que tanto me gusta.",
+        "6. Tus mejillas que quisiera llenar de besitos.",
+        "7. Tus labios y la ilusión que me da besarte.",
+        "8. Tus manos que quiero seguir tomando.",
+        "9. Tu rostro tal como es.",
+        "10. Tu cuerpo que me encanta sin que tengas que cambiarlo para mí.",
+        "11. Tus expresiones cuando estás emocionada.",
+        "12. Tu mirada cuando algo te sorprende.",
+        "13. La forma en que sonríes sin darte cuenta.",
+        "14. Lo linda que te ves cuando estás concentrada.",
+        "15. Tu belleza en los días más sencillos.",
+        "16. Tu manera de arreglarte a tu gusto.",
+        "17. Esos detalles tuyos que te hacen diferente a cualquier otra persona.",
+        "18. Tu forma de hablar.",
+        "19. La ternura que encuentro en ti.",
+        "20. Que cada vez que te miro descubro algo más que me gusta.",
+        "21. Tu forma de preocuparte por mí.",
+        "22. Que me preguntes cómo me siento.",
+        "23. Que te tomes el tiempo de escucharme.",
+        "24. El cariño que me das.",
+        "25. Tus palabras cuando necesito ánimo.",
+        "26. Que quieras saber cómo estuvo mi día.",
+        "27. La confianza que me brindas.",
+        "28. Tu compañía cuando me siento solo.",
+        "29. La importancia que les das a mis sentimientos.",
+        "30. Que me permitas acompañarte también a ti.",
+        "31. Tu sensibilidad.",
+        "32. El amor que tienes por tu familia.",
+        "33. La preocupación que sientes por las personas que quieres.",
+        "34. Tu capacidad de emocionarte por algo que te importa.",
+        "35. Tu manera de demostrar que alguien te interesa.",
+        "36. Que tengas tus propias opiniones.",
+        "37. Tu personalidad que sigo conociendo con tanto cariño.",
+        "38. Que puedas ser tierna y también firme.",
+        "39. Todo lo bueno que hay en tu corazón.",
+        "40. Que contigo puedo sentirme querido.",
+        "41. Tus sueños y las ganas que me dan de verte cumplirlos.",
+        "42. Las cosas que te gustan y que quiero conocer mejor.",
+        "43. Tu esfuerzo en los estudios.",
+        "44. Todo lo que intentas aunque a veces tengas miedo de equivocarte.",
+        "45. Tu inteligencia.",
+        "46. Las ideas que se te ocurren.",
+        "47. Que tengas metas propias.",
+        "48. Tu deseo de salir adelante.",
+        "49. El valor que tienes para enfrentar días difíciles.",
+        "50. Que sigas aprendiendo aunque algo no salga a la primera.",
+        "51. Tus logros grandes y pequeños.",
+        "52. La dedicación que pones en lo que te importa.",
+        "53. Tu capacidad de volver a intentarlo.",
+        "54. Las cosas que sabes y puedes enseñarme.",
+        "55. La persona en la que te estás convirtiendo.",
+        "56. Que haya tanto de ti por descubrir.",
+        "57. Escucharte hablar de algo que te ilusiona.",
+        "58. Conocer lo que quieres para tu vida.",
+        "59. Poder sentirme orgulloso de ti.",
+        "60. Tener motivos para admirarte además de amarte.",
+        "61. Tus mensajes inesperados.",
+        "62. Ver tu nombre aparecer en mi teléfono.",
+        "63. Cuando me cuentas algo pequeño de tu día.",
+        "64. Nuestras conversaciones largas.",
+        "65. Esos ratitos en los que podemos hablar aunque estemos ocupados.",
+        "66. Poder decirte que te extraño.",
+        "67. Escuchar que tú también quieres hablar conmigo.",
+        "68. Nuestros momentos de ternura.",
+        "69. Las bromas que compartimos.",
+        "70. Los recuerdos que ya tenemos.",
+        "71. La emoción de saber que voy a verte.",
+        "72. Lo rápido que se pasa el tiempo cuando estoy contigo.",
+        "73. Tener una foto tuya y quedarme mirándola.",
+        "74. Que me nazca llevarte conmigo hasta en mi fondo de pantalla.",
+        "75. Encontrar cosas durante el día que quisiera enseñarte.",
+        "76. Poder compartir contigo lo que me hace feliz.",
+        "77. Que una conversación contigo pueda mejorar mi ánimo.",
+        "78. Pensar en un abrazo tuyo cuando te extraño.",
+        "79. Las ganas que me quedan de seguir hablando al despedirnos.",
+        "80. Que estos dos meses estén llenos de momentos que quiero guardar.",
+        "81. La tranquilidad que siento cuando estamos bien.",
+        "82. La confianza de poder abrirte mi corazón.",
+        "83. Las ganas que me das de expresar mi cariño.",
+        "84. La ilusión de preparar algo bonito para ti.",
+        "85. Que me nazca pedirle a Dios que te cuide.",
+        "86. Poder incluirte en mis oraciones.",
+        "87. Imaginar que algún día iremos juntos a la iglesia.",
+        "88. La ilusión de conocer más de tu familia.",
+        "89. Pensar en todos los lugares que podríamos visitar.",
+        "90. Imaginar días sencillos a tu lado.",
+        "91. Las ganas de apoyarte sin quitarte espacio para crecer.",
+        "92. Que quiera aprender a entenderte cada vez mejor.",
+        "93. El deseo de resolver contigo lo que nos cueste.",
+        "94. Poder imaginar una relación que crezca con respeto.",
+        "95. La ilusión que me da pensar en otro mes contigo.",
+        "96. Las ganas de celebrar tus próximas metas.",
+        "97. Imaginar un hogar en el que los dos nos sintamos amados.",
+        "98. Saber que quiero seguir eligiéndote mientras construimos lo nuestro.",
+        "99. Todo lo que eres y todavía no sé poner en palabras.",
+        "100. Que eres tú la persona de la que me enamoré y con quien quiero seguir viviendo esta historia.",
+        "Y después de escribir estas 100 cosas todavía siento que me faltan muchas. Porque amarte también está en esos momentos que no sé explicar bien pero que me dejan sonriendo al pensar en ti. Ojalá cuando dudes de lo hermosa o valiosa que eres puedas volver a estas palabras y sentir un poquito de todo el cariño con el que te miro.",
+        "Felices dos meses mi amor Me encantas muchísimo te pochiamo te amodoro💗"
+      ]
+    },
+    {
+      kicker: 'Tercera calabaza',
+      title: 'Quiero estar contigo',
+      subtitle: 'En los días bonitos y también en los difíciles',
+      theme: 'theme-safe',
+      decoration: '<span class="deco-side"><i></i></span><span class="deco-main"></span><span class="deco-side"><i></i></span>',
+      text: [
+        "Mi amor hoy quiero agradecerte por estos dos meses juntos gracias por el tiempo que me has dado y por cada ocasión en la que has decidido compartir conmigo una parte de tu día. Sé que tienes tus estudios y tus preocupaciones y muchas cosas que atender. Por eso valoro tanto cuando buscas un momento para hablarme o preguntarme cómo estoy. Para mí esos detalles tienen mucho significado.",
+        "Gracias por escucharme cuando me he sentido triste o solo. Por preocuparte y hacerme sentir que lo que me pasa también te importa. A veces uno no necesita que le solucionen todo. A veces basta con poder hablar con la persona que ama y sentir que está prestando atención. Tú me has dado momentos así y quiero que sepas que los llevo conmigo con mucho cariño.",
+        "También te agradezco por dejarme conocerte. Por contarme lo que te gusta y lo que sueñas y por permitirme estar cerca cuando algo te preocupa. Quiero seguir siendo alguien con quien puedas hablar con confianza. Alguien a quien puedas contarle que tuviste un buen día pero también que estás cansada o que algo te dolió. Me importa que te sientas escuchada y que sepas que no tienes que esconder tus emociones para que yo quiera estar contigo.",
+        "En estos dos meses me he dado cuenta de cuánto deseo que lo nuestro siga creciendo. Me emociona pensar en muchos aniversarios más pero también quiero cuidar lo que tenemos hoy. Quiero aprender a hablar contigo cuando algo nos moleste y escuchar lo que necesitas sin asumir que ya lo sé todo. Si me equivoco quiero poder reconocerlo y demostrarte con hechos que me importa mejorar.",
+        "Sé que habrá días complicados. Puede haber distancia y cansancio y momentos en los que tengamos poco tiempo para hablar. También podemos pensar diferente o no entendernos a la primera. Mi deseo es que aprendamos a enfrentar esas cosas con respeto y paciencia. Que podamos decirnos lo que sentimos sin herirnos y buscar juntos una solución cuando algo nos esté alejando.",
+        "Yo quiero seguir contigo por toda la vida mi amor. Ese es el deseo que tengo cuando pienso en nosotros. Y sé que una vida juntos se construye con muchas decisiones pequeñas: cumplir lo que prometemos y cuidarnos al hablar y hacernos un espacio y pedir perdón cuando corresponde. Quiero poner de mi parte para que ese futuro que tanto me ilusiona tenga raíces en la manera en que te trato cada día.",
+        "Gracias por ser mi novia y por permitirme ser tu novio. Gracias por las sonrisas y la compañía y por todo lo que ya estamos aprendiendo el uno del otro. Estoy muy feliz de compartir estos dos meses contigo y tengo muchas ganas de seguir sumando recuerdos a tu lado.",
+        "Te amo mi princesa. Deseo que con el paso del tiempo podamos mirar hacia atrás y recordar este comienzo con ternura mientras seguimos tomados de la mano, cuando tu tenias 16 y yo 18 te amo con toda mi alma mi menorcita."
+      ]
+    },
+    {
+      kicker: 'Cuarta calabaza',
+      title: 'Todo lo que sueño contigo',
+      subtitle: 'El futuro que me ilusiona construir a tu lado',
+      theme: 'theme-future',
+      decoration: '<span class="deco-side"><i></i></span><span class="deco-main"></span><span class="deco-side"><i></i></span>',
+      text: [
+        "Mi amor cuando pienso en mi futuro hay muchas cosas que todavía no sé. No sé dónde voy a vivir ni cómo serán todos mis días ni cuántos planes cambiarán en el camino. Pero hay algo que me ilusiona mucho y es imaginar que tú sigues a mi lado. Pensar que estos dos meses pueden ser el comienzo de una historia que cuidemos durante muchos años.",
+        "Quiero vivir más etapas contigo. Quiero verte terminar tus estudios y celebrar contigo todo el esfuerzo que has hecho. Quiero saber cómo te fue en eso que tanto te preocupaba y estar ahí cuando tengas una noticia que te haga feliz. Me gustaría acompañarte mientras descubres nuevas metas y recordarte lo capaz que eres cuando alguna se te haga difícil. Quiero que puedas crecer y hacer lo que te gusta sintiendo que tu novio se alegra de verte avanzar.",
+        "También sueño con compartir más de nuestras vidas. Con conocer a tu familia y que puedan conocerme a mí. Con presentarme con respeto y demostrar poco a poco el cariño que te tengo. Me hace ilusión que podamos compartir una comida y conversar sin tanta prisa y crear recuerdos con las personas que son importantes para los dos.",
+        "Quiero ir a la iglesia contigo y darle gracias a Dios por lo que vayamos viviendo. Me gustaría que pudiéramos orar juntos y pedir sabiduría para tomar decisiones. Que nuestra fe nos ayude a tratarnos con amor y a tener humildad para reconocer cuando necesitamos cambiar algo. Imagino lo bonito que sería mirar a mi lado y encontrarte ahí compartiendo conmigo algo que también tiene tanto valor en mi corazón.",
+        "Y sí mi amor también me ilusiona imaginar un hogar contigo. Pensar en llegar después de un día largo y poder preguntarte cómo estás mientras te abrazo. Preparar algo de comer juntos aunque al principio no nos salga perfecto. Decidir qué película ver y tardarnos más eligiendo que viéndola. Hacer compras y organizar nuestros gastos y ahorrar para algo que los dos deseemos. Son cosas sencillas pero al imaginarlas contigo me hacen muchísima ilusión.",
+        "Si algún día los dos lo deseamos y estamos preparados me gustaría formar una familia contigo y tener hijos. Poder darles cariño y enseñarles con nuestro ejemplo lo que significa escucharse y respetarse. Me emociona pensar en esa posibilidad pero también quiero disfrutar cada etapa que venga antes. Todavía tenemos tantos lugares por conocer y tantas conversaciones por tener y tantas cosas que aprender del otro.",
+        "No quiero que estos sueños se queden solamente en palabras bonitas de aniversario. Quiero prepararme para el futuro que deseo. Seguir creciendo y esforzarme por mis metas y aprender a ser una buena pareja. Quiero que cuando hablemos de nosotros también podamos hablar de lo que cada uno necesita y de cómo podemos apoyarnos para llegar a donde queremos.",
+        "Hoy cumplimos dos meses y me hace feliz poder decirte que mis intenciones contigo son sinceras. Quiero seguir conociéndote y amándote con cuidado. Quiero más abrazos y más conversaciones y más días en los que podamos agradecer que nos tenemos. Quiero que construyamos una historia que a los dos nos haga sentir seguros y queridos.",
+        "Felices dos meses mi princesa. Todavía nos queda mucho por vivir y qué bonito sería descubrirlo juntos. Te amo y me ilusiona muchísimo pensar en todo lo que podemos construir"
+      ]
+    }
+  ];
+  let currentMessageIndex = 0;
+
+  function spawnFireworkBurst(xPercent, yPercent, colors, particleCount = 18){
+    if (!fireworksLayer) return;
+
+    const burst = document.createElement('div');
+    burst.className = 'firework-burst';
+    burst.style.left = xPercent + '%';
+    burst.style.top = yPercent + '%';
+
+    const core = document.createElement('div');
+    core.className = 'firework-core';
+    core.style.setProperty('--core-color', colors[0]);
+    burst.appendChild(core);
+
+    const ring = document.createElement('div');
+    ring.className = 'firework-ring';
+    ring.style.setProperty('--ring-color', colors[1] || colors[0]);
+    burst.appendChild(ring);
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('span');
+      particle.className = 'firework-particle';
+
+      const angle = (Math.PI * 2 * i) / particleCount;
+      const spread = 56 + Math.random() * 42;
+      const dx = Math.cos(angle) * spread;
+      const dy = Math.sin(angle) * spread;
+      const size = (Math.random() * 3 + 3.2).toFixed(2) + 'px';
+      const color = colors[i % colors.length];
+      const delay = (Math.random() * 0.12).toFixed(2) + 's';
+
+      particle.style.setProperty('--dx', dx.toFixed(2) + 'px');
+      particle.style.setProperty('--dy', dy.toFixed(2) + 'px');
+      particle.style.setProperty('--size', size);
+      particle.style.setProperty('--color', color);
+      particle.style.setProperty('--delay', delay);
+      burst.appendChild(particle);
+    }
+
+    fireworksLayer.appendChild(burst);
+    setTimeout(function(){
+      burst.remove();
+    }, 1800);
+  }
+
+  function startGrandCelebration(){
+    if (!grandCelebration || !fireworksLayer) return;
+
+    grandCelebration.classList.remove('show');
+    void grandCelebration.offsetWidth;
+    grandCelebration.classList.add('show');
+    grandCelebration.setAttribute('aria-hidden', 'false');
+    fireworksLayer.innerHTML = '';
+
+    const paletteA = ['#aa82ff', '#6ea8ff', '#d0b3ff', '#82d2ff'];
+    const paletteB = ['#8c67ff', '#5e95ff', '#c2a5ff', '#8fd7ff'];
+    const positions = [
+      [18, 28], [50, 22], [82, 28],
+      [28, 56], [72, 54], [50, 38],
+      [14, 68], [86, 66],
+      [34, 24], [66, 24], [50, 64],
+      [24, 40], [76, 40]
+    ];
+
+    let burstIndex = 0;
+
+    function launchBurstWave(){
+      const pos = positions[burstIndex % positions.length];
+      const palette = burstIndex % 2 === 0 ? paletteA : paletteB;
+      spawnFireworkBurst(pos[0], pos[1], palette, 20);
+
+      if (burstIndex % 3 === 0) {
+        const companion = positions[(burstIndex + 5) % positions.length];
+        setTimeout(function(){
+          spawnFireworkBurst(companion[0], companion[1], palette === paletteA ? paletteB : paletteA, 16);
+        }, 160);
+      }
+
+      burstIndex += 1;
+    }
+
+    launchBurstWave();
+    const fireworksTimer = setInterval(launchBurstWave, 650);
+
+    setTimeout(function(){
+      clearInterval(fireworksTimer);
+    }, 9200);
+
+    setTimeout(function(){
+      grandCelebration.classList.remove('show');
+      grandCelebration.setAttribute('aria-hidden', 'true');
+      fireworksLayer.innerHTML = '';
+    }, 10000);
+  }
+
+  function celebrateAllMessages(){
+    if (allMessagesCelebrated) return;
+    allMessagesCelebrated = true;
+
+    specialPumpkins.forEach((pumpkin) => {
+      if (!pumpkin) return;
+      pumpkin.classList.add('celebrate-choice');
+      setTimeout(() => pumpkin.classList.remove('celebrate-choice'), 10000);
+    });
+    choiceHalos.forEach((halo) => {
+      if (!halo) return;
+      halo.classList.add('celebrate');
+      setTimeout(() => halo.classList.remove('celebrate'), 10000);
+    });
+    choiceRings.forEach((ring) => {
+      if (!ring) return;
+      ring.classList.add('celebrate');
+      setTimeout(() => ring.classList.remove('celebrate'), 10000);
+    });
+
+    startGrandCelebration();
+  }
+
+  function renderMessage(index){
+    const data = messages[index];
+    if (!data) return;
+
+    currentMessageIndex = index;
+    visitedMessages.add(index);
+    highlightChoice(index);
+
+    messageKicker.textContent = data.kicker;
+    messageTitle.textContent = data.title;
+    messageSubtitle.textContent = data.subtitle;
+    messageDecoration.innerHTML = data.decoration;
+
+    messagePanel.classList.remove(
+      'theme-prayer','theme-love','theme-safe','theme-future',
+      'origin-1','origin-2','origin-3','origin-4'
+    );
+    messagePanel.classList.add(data.theme, 'origin-' + (index + 1));
+
+    messageText.classList.remove('reveal');
+    messageText.innerHTML = data.text.map(paragraph => '<p>' + paragraph + '</p>').join('');
+    void messageText.offsetWidth;
+    messageText.classList.add('reveal');
+
+    const scrollBox = document.getElementById('messageScroll');
+    if (scrollBox) scrollBox.scrollTop = 0;
+
+    messageDots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+      dot.classList.toggle('visited', visitedMessages.has(i));
+      dot.setAttribute('aria-current', i === index ? 'true' : 'false');
+    });
+
+    specialPumpkins.forEach((pumpkin, i) => {
+      if (!pumpkin) return;
+      pumpkin.style.filter = i === index
+        ? 'drop-shadow(0 0 12px rgba(255,245,181,1)) drop-shadow(0 0 25px rgba(255,164,47,1)) drop-shadow(0 0 44px rgba(255,104,20,.9))'
+        : '';
+    });
+
+    highlightChoice(index);
+
+    if (visitedMessages.size === 4 && !allMessagesCelebrated) {
+      pendingFinalCelebration = true;
+    }
+  }
+
+  let openingMessage = false;
+
+  function openMessage(index){
+    if (!overlay || openingMessage) return;
+    openingMessage = true;
+
+    renderMessage(index);
+    document.body.classList.add('modal-open');
+
+    messagePanel.classList.remove('spawn-flash');
+    void messagePanel.offsetWidth;
+    messagePanel.classList.add('spawn-flash');
+
+    overlay.style.visibility = 'visible';
+    overlay.style.pointerEvents = 'auto';
+    overlay.classList.add('show');
+    overlay.setAttribute('aria-hidden', 'false');
+
+    requestAnimationFrame(function(){
+      overlay.style.opacity = '1';
+    });
+
+    setTimeout(function(){
+      openingMessage = false;
+    }, 320);
+  }
+
+  function closeMessage(){
+    if (!overlay) return;
+
+    overlay.classList.remove('show');
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+
+    document.body.classList.remove('modal-open');
+
+    setTimeout(function(){
+      overlay.style.visibility = 'hidden';
+      specialPumpkins.forEach((pumpkin) => {
+        if (!pumpkin) return;
+        pumpkin.style.filter = '';
+      });
+      highlightChoice(currentMessageIndex);
+
+      if (pendingFinalCelebration && !allMessagesCelebrated) {
+        pendingFinalCelebration = false;
+        celebrateAllMessages();
+      }
+    }, 360);
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeMessage);
+  if (backBtn) backBtn.addEventListener('click', closeMessage);
+  if (nextBtn) nextBtn.addEventListener('click', function(){
+    const nextIndex = (currentMessageIndex + 1) % messages.length;
+    renderMessage(nextIndex);
+  });
+
+  messageDots.forEach((dot) => {
+    dot.addEventListener('click', function(){
+      const index = Number(dot.getAttribute('data-modal-index'));
+      renderMessage(index);
+    });
+  });
+  if (overlay) {
+    overlay.addEventListener('click', function(event){
+      if (event.target === overlay) closeMessage();
+    });
+  }
+  document.addEventListener('keydown', function(event){
+    if (event.key === 'Escape' && overlay && overlay.classList.contains('show')) {
+      closeMessage();
+    }
+  });
+
+  specialPumpkins.forEach((pumpkin, index) => {
+    if (!pumpkin) return;
+
+    pumpkin.setAttribute('role','button');
+    pumpkin.setAttribute('tabindex','0');
+    pumpkin.setAttribute('aria-label','Abrir mensaje especial');
+
+    pumpkin.addEventListener('mouseenter', function(){
+      highlightChoice(index);
+    });
+    pumpkin.addEventListener('focus', function(){
+      highlightChoice(index);
+    });
+    pumpkin.addEventListener('click', function(){
+      openMessage(index);
+    });
+    pumpkin.addEventListener('keydown', function(event){
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openMessage(index);
+      }
+    });
+  });
+
+  // Extra-safe hit zones over each pumpkin, especially for desktop browsers.
+  const pumpkinHitZones = Array.from(document.querySelectorAll('.pumpkin-hit'));
+
+  pumpkinHitZones.forEach(function(zone){
+    const index = Number(zone.getAttribute('data-message-index'));
+
+    zone.addEventListener('mouseenter', function(){
+      highlightChoice(index);
+    });
+
+    zone.addEventListener('focus', function(){
+      highlightChoice(index);
+    });
+
+    zone.addEventListener('pointerup', function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      openMessage(index);
+    });
+
+    zone.addEventListener('click', function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      openMessage(index);
+    });
+
+    zone.addEventListener('keydown', function(event){
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openMessage(index);
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
